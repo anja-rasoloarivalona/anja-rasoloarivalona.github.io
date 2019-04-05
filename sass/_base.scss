@@ -12,6 +12,8 @@ html {
 
 body {
     box-sizing: border-box;
+    background: var(--color-dark);
+    overflow: hidden;
 }
 
 
@@ -32,6 +34,7 @@ body {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
     background-color: var(--color-dark);
+    transform: translateX(100%);
 
     &__img {
         width: 100%;
@@ -44,4 +47,5 @@ body {
 .about {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    //background: var(--color-dark);
 }
