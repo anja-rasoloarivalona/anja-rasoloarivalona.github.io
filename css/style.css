@@ -74,7 +74,7 @@ body {
 .projects {
   grid-row: 2 / 3;
   grid-column: 2 / 4;
-  background: rgba(255, 69, 0, 0.8);
+  background: rgba(238, 235, 234, 0.8);
   z-index: 10;
   transform: translateY(300px); }
 
@@ -90,7 +90,7 @@ body {
   .projects__text-bg {
     position: absolute;
     font-size: 12rem;
-    color: red;
+    color: var(--color-dark);
     z-index: 5;
     position: fixed;
     bottom: 0;
@@ -99,16 +99,29 @@ body {
     transform: translatey(-100%); }
 
 .project__wrapper {
-  height: 30rem;
-  width: 30rem;
-  margin: 0 2rem;
-  box-shadow: 0 10px 6px -6px #242323; }
+  border-radius: 1000px;
+  height: 25rem;
+  width: 25rem;
+  margin: 0 3.5rem;
+  box-shadow: 0 10px 6px -6px #242323;
+  transform: translatey(-35%);
+  z-index: 6; }
 
 .project__img {
   height: 100%;
   width: 100%;
   position: center;
-  object-fit: cover; }
+  object-fit: cover;
+  border-radius: 1000px; }
+
+.project__wrapper--1 {
+  position: relative; }
+
+.project__wrapper--2 {
+  position: absolute; }
+
+.project__wrapper--3 {
+  position: absolute; }
 
 .sidebar {
   display: flex;

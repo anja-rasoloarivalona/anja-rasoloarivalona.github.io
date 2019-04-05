@@ -7,7 +7,7 @@
     &__text-bg {
         position: absolute;
         font-size: 12rem;
-        color: red;
+        color: var(--color-dark);
         z-index: 5;
         position:fixed;
         bottom: 0;
@@ -19,11 +19,15 @@
 
 .project {
 
+
     &__wrapper {
-        height: 30rem;
-        width: 30rem;
-        margin: 0 2rem;
+        border-radius: 1000px;
+        height: 25rem;
+        width: 25rem;
+        margin: 0 3.5rem;
         box-shadow: 0 10px 6px -6px rgb(36, 35, 35);
+        transform: translatey(-35%);
+        z-index: 6;
     }
 
     &__img {
@@ -31,6 +35,19 @@
         width: 100%;
         position: center;
         object-fit: cover;
+        border-radius: 1000px;
+    }
+
+    &__wrapper--1 {
+        position: relative;
+    }
+
+    &__wrapper--2 {
+        position: absolute;
+    }
+
+    &__wrapper--3 {
+        position: absolute;
     }
 
 }

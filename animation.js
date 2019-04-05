@@ -41,14 +41,9 @@ $(document).ready(function(){
     .to($about, 12, {rotationX: 15}, '-=12')
     .to($about, 3, {autoAlpha: 0}, '-=4')
     .to($projects, 7, {y: '15%'})  
-    //.to($aboutTextBg, 1 , {color: 'black'},'-=3.5')
-    //.to($aboutTextBg, 1 , {opacity: .5})
     .to($projectsTextBgContainer, 1 , {autoAlpha: 1},'-=.5' )
-    .to($projects, 1 , {background:'orangered'},'-=2')
-    //.to($aboutTextBgContainer, 10 , {y: '-100vh'},'-=4')
+    .to($projects, 1 , {background:'rgb(238, 235, 234)'},'-=2')
     .to($projectsTextBgContainer, 1 , {opacity: .5},'+=4')
-    
-  
     ;
 
      var controller = new ScrollMagic.Controller(); 
@@ -62,30 +57,6 @@ $(document).ready(function(){
     .setTween(t2)
     .addIndicators()
     .addTo(controller);
-
-    /*
-    var controller = new ScrollMagic.Controller(); 
-
-    var tween = TweenMax.to($test, 1,
-                         {rotationX: 45}
-                     )//.to($test, 1, {autoAlpha: 0})
-    
-    var scene = new ScrollMagic.Scene({
-        triggerElement: '.about__logo__container',
-        triggerHook: 0,
-        duration: "100%",
-        offset: -50
-})
-.setTween(tween)
-.addIndicators()
-.addTo(controller);
-*/
- 
-
-
-
-
-
 
 })
 
