@@ -15,3 +15,15 @@ body {
 }
 
 
+
+.container {
+    display: grid;
+    grid-template-columns: 20rem 1fr 4rem;
+    grid-template-rows: 100vh max-content;
+}
+
+.sidebar {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+   
+}
