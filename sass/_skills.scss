@@ -1,24 +1,37 @@
-.projects {
+.skills {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
     position: relative;
+    background: orange;
+
 
     &__text-bg {
-        position: absolute;
-        font-size: 12rem;
-        color: red;
-        z-index: 5;
-        position:fixed;
+
+        z-index: 100;
+        position:absolute;
         bottom: 0;
         left: 0;
-        opacity: 0;
-        transform: translatey(-100%);
+        //opacity: 0;s
     }
+
+    &__text__bg {
+        font-size: 12rem;
+        color: red;
+        //z-index: 100;
+        //position:fixed;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+
+    
+
+  
 }
 
-.project {
-
+.skill {
     &__wrapper {
         height: 30rem;
         width: 30rem;
@@ -34,6 +47,3 @@
     }
 
 }
-
-
-

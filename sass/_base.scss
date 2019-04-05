@@ -20,7 +20,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 15rem 1fr 10rem;
-    grid-template-rows: 100vh 100vh;
+    grid-template-rows: 100vh 100vh 100vh;
 }
 
 .sidebar {
@@ -53,7 +53,12 @@ body {
 .projects {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
-    background: rgba(orangered, .4);
+    background: rgba(orangered, .8);
     z-index: 10;
     transform: translateY(300px);
+}
+
+.skills {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
 }

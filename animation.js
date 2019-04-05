@@ -37,15 +37,16 @@ $(document).ready(function(){
 
     var t2 = new TimelineLite();
     t2
-    .to($aboutTextBgContainer, 2 , {y:'-300px'},'-=7')
-    .to($about, 5, {rotationX: 15}, '-=12')
-    .to($about, 2, {autoAlpha: 0}, '-=4')
-    .to($projects, 2, {y: '15%'})  
-    .to($aboutTextBg, 1 , {color: 'black'},'-=3.5')
+    .to($aboutTextBgContainer, 2 , {y:'0px'},'-=7')
+    .to($about, 12, {rotationX: 15}, '-=12')
+    .to($about, 3, {autoAlpha: 0}, '-=4')
+    .to($projects, 7, {y: '15%'})  
+    //.to($aboutTextBg, 1 , {color: 'black'},'-=3.5')
     //.to($aboutTextBg, 1 , {opacity: .5})
     .to($projectsTextBgContainer, 1 , {autoAlpha: 1},'-=.5' )
-    .to($aboutTextBg, 8 , {y: '-50vh'},'-=3')
-    .to($projectsTextBgContainer, 1 , {opacity: .5})
+    .to($projects, 1 , {background:'orangered'},'-=2')
+    //.to($aboutTextBgContainer, 10 , {y: '-100vh'},'-=4')
+    .to($projectsTextBgContainer, 1 , {opacity: .5},'+=4')
     
   
     ;
@@ -55,7 +56,7 @@ $(document).ready(function(){
      var scene = new ScrollMagic.Scene({
         triggerElement: '.about__logo__container',
         triggerHook: 0,
-        duration: "500",
+        duration: "600",
         
     })
     .setTween(t2)

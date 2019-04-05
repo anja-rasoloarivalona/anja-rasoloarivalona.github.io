@@ -26,7 +26,7 @@
       width: 50%; }
   .about__text-bg {
     font-size: 12rem;
-    color: red;
+    color: var(--color-white);
     align-self: flex-start;
     z-index: 5;
     position: fixed;
@@ -51,7 +51,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 15rem 1fr 10rem;
-  grid-template-rows: 100vh 100vh; }
+  grid-template-rows: 100vh 100vh 100vh; }
 
 .sidebar {
   grid-row: 1 / 2;
@@ -74,21 +74,41 @@ body {
 .projects {
   grid-row: 2 / 3;
   grid-column: 2 / 4;
-  background: rgba(255, 69, 0, 0.4);
+  background: rgba(255, 69, 0, 0.8);
   z-index: 10;
   transform: translateY(300px); }
 
+.skills {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4; }
+
 .projects {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
   .projects__text-bg {
+    position: absolute;
     font-size: 12rem;
     color: red;
-    align-self: flex-start;
     z-index: 5;
     position: fixed;
     bottom: 0;
-    transform: translateY(-30rem);
-    opacity: 0; }
+    left: 0;
+    opacity: 0;
+    transform: translatey(-100%); }
+
+.project__wrapper {
+  height: 30rem;
+  width: 30rem;
+  margin: 0 2rem;
+  box-shadow: 0 10px 6px -6px #242323; }
+
+.project__img {
+  height: 100%;
+  width: 100%;
+  position: center;
+  object-fit: cover; }
 
 .sidebar {
   display: flex;
@@ -129,6 +149,37 @@ body {
     height: 3rem;
     object-fit: cover;
     fill: var(--color-white); }
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  background: orange; }
+  .skills__text-bg {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .skills__text__bg {
+    font-size: 12rem;
+    color: red;
+    bottom: 0;
+    left: 0;
+    opacity: 1; }
+
+.skill__wrapper {
+  height: 30rem;
+  width: 30rem;
+  margin: 0 2rem;
+  box-shadow: 0 10px 6px -6px #242323; }
+
+.skill__img {
+  height: 100%;
+  width: 100%;
+  position: center;
+  object-fit: cover; }
 
 body {
   font-family: 'Alegreya Sans', sans-serif; }
