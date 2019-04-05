@@ -2,8 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: var(--color-dark);
-  
+    //background: var(--color-dark);
+    //opacity: 0;
+    position: fixed;
+    height: 100%;
+    flex-grow: 1;
+    width: 15rem;
 
     &__list {
         width: 100%;

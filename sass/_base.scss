@@ -12,40 +12,48 @@ html {
 
 body {
     box-sizing: border-box;
-    background: var(--color-dark);
-    overflow: hidden;
+    //background: var(--color-dark);
+    overflow-x: hidden;
+    background: orange;
 }
-
-
 
 .container {
     display: grid;
-    grid-template-columns: 20rem 1fr 14rem;
-    grid-template-rows: 100vh max-content;
+    grid-template-columns: 15rem 1fr 10rem;
+    grid-template-rows: 100vh 100vh;
 }
 
 .sidebar {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    //opacity: 0;
+    z-index: 2;
 }
 
-
-.right-side {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    background-color: var(--color-dark);
-    transform: translateX(100%);
-
-    &__img {
-        width: 100%;
-        object-fit: cover;
-        justify-self: center;  
-    }
-}
 
 
 .about {
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    //background: var(--color-dark);
+    grid-column: 2 / 4;
+    z-index: 2;
+}
+
+.layer-back {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    background-image:linear-gradient(
+         rgba(black, 0.9),
+         rgba(black, 0.9)),
+         url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.projects {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    background: rgba(orangered, .4);
+    z-index: 10;
+    transform: translateY(300px);
 }
