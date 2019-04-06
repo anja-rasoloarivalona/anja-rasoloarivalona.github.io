@@ -1,0 +1,54 @@
+.btn {
+    /* FOR THIS PROJECT ONLY */
+        margin: 1rem;
+    /* END FOR THIS PROJECT ONLY */
+
+
+    &,
+    &:link, 
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.2rem 3rem;
+        display: inline-block; 
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black,.2);
+        
+        &::after { 
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active
+     {  
+        transform: translateY(-1px); 
+        box-shadow: 0 .5rem 1rem rgba(black,.2); 
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &--blue {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+
+    }
+
+    &--white {
+        background-color: rgb(184, 187, 223);
+        border: 1px solid rgb(184, 187, 223);
+        color: var(--color-primary);
+    }
+
+}

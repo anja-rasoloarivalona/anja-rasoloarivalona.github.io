@@ -8,19 +8,25 @@
 
 html {
     font-size: 62.5%;
+   // scroll-behavior: smooth;
 }
 
 body {
     box-sizing: border-box;
     //background: var(--color-dark);
     overflow-x: hidden;
-    background: rgba(8, 8, 78, 0.747);
+    overflow-y: scroll;
+   // scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-margin-top: 15vh;
+    //scroll-snap-points-y: repeat(100vh);
+    background: var(--color-primary);
 }
 
 .container {
     display: grid;
     grid-template-columns: 15rem 1fr 10rem;
-    grid-template-rows: 100vh 100vh 100vh;
+    grid-template-rows: 100vh 100vh 115vh 100vh;
 }
 
 .sidebar {
@@ -36,6 +42,7 @@ body {
     grid-row: 1 / 2;
     grid-column: 2 / 4;
     z-index: 2;
+    scroll-snap-align: start;
 }
 
 .layer-back {
@@ -55,11 +62,20 @@ body {
     height: 100%;
     grid-column: 2 / 4;
     //background:rgba(orange, .8);
-    z-index: 10;
+    z-index: 900;
     transform: translateY(300px);
+    scroll-snap-align: start;
+   
 }
 
 .skills {
     grid-row: 3 / 4;
     grid-column: 2 / 4;
+   scroll-snap-align: start;
+}
+
+.contact {
+    grid-row: 4 / 5;
+    grid-column: 2 / 4;
+    scroll-snap-align: end;
 }

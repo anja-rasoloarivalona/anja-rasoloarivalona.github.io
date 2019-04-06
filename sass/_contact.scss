@@ -1,4 +1,4 @@
-.skills {
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,16 +7,14 @@
     background: rgb(8, 8, 78);
 
 
-
     &__text-bg {
-
         z-index: 100;
         position:absolute;
         bottom: 0;
         left: 0;
-
     }
 
+    
     &__text__bg {
         font-size: 12rem;
         color: var(--color-white);
@@ -25,21 +23,4 @@
         opacity: 1;
     }
   
-}
-
-.skill {
-    &__wrapper {
-        height: 30rem;
-        width: 30rem;
-        margin: 0 2rem;
-        box-shadow: 0 10px 6px -6px rgb(36, 35, 35);
-    }
-
-    &__img {
-        height: 100%;
-        width: 100%;
-        position: center;
-        object-fit: cover;
-    }
-
 }

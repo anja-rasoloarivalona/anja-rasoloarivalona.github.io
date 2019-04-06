@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  
     /* LAYOUT */
     var $projects = $('.projects');
     var $about = $('.about');
@@ -13,6 +14,14 @@ $(document).ready(function(){
 
     var $projectsTextBgContainer= $('.projects__text-bg');
     var $projectsTextBg = $('.projects__text__bg');
+
+    var $slide = $('.swiper-slide');
+    
+
+    $('.smooth-goto').on('click', function() {  
+      $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
+      return false;
+  });
 
   
    
@@ -40,10 +49,11 @@ $(document).ready(function(){
     .to($aboutTextBgContainer, 2 , {y:'0px'},'-=7')
     .to($about, 12, {rotationX: 15}, '-=12')
     .to($about, 3, {autoAlpha: 0}, '-=4')
-    .to($projects, 7, {y: '15%'})  
-    .to($projectsTextBgContainer, 1 , {autoAlpha: 1},'-=.5' )
-    .to($projects, 8 , {background: 'rgb(238, 235, 234)'},'-=2')
-    .to($projectsTextBgContainer, 1 , {opacity: .5},'-=4')
+    .to($projects, 7, {y: '15%'})
+    .to($slide, 4, {background:'rgb(235, 227, 227)'},'-=5')  
+    .to($projectsTextBgContainer, 3 , {autoAlpha: 1},'-=5' )
+    .to($projects, 8 , {background: 'rgb(235, 227, 227)'},'-=5')
+    .to($projectsTextBgContainer, 2 , {opacity: .5},'-=4')
     ;
 
      var controller = new ScrollMagic.Controller(); 
@@ -67,7 +77,7 @@ $(document).ready(function(){
     var $wrap3 = $('.project__wrapper--3');
     var $projectImg = $('.project__img')
     
-
+/*
     var t3 = new TimelineLite();
     t3
     .to($wrap1, 3, {x: '15%'})
@@ -90,7 +100,7 @@ $(document).ready(function(){
     })
     .setTween(t3)
     .addIndicators()
-    .addTo(controller)
+    .addTo(controller) */
    
 
 
