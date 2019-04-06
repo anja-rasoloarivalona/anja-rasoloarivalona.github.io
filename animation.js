@@ -42,7 +42,7 @@ $(document).ready(function(){
     .to($about, 3, {autoAlpha: 0}, '-=4')
     .to($projects, 7, {y: '15%'})  
     .to($projectsTextBgContainer, 1 , {autoAlpha: 1},'-=.5' )
-    .to($projects, 1 , {background:'rgb(238, 235, 234)'},'-=2')
+    .to($projects, 3 , {background: 'rgb(238, 235, 234)'},'-=2')
     .to($projectsTextBgContainer, 1 , {opacity: .5},'+=4')
     ;
 
@@ -57,6 +57,42 @@ $(document).ready(function(){
     .setTween(t2)
     .addIndicators()
     .addTo(controller);
+
+
+    /* THIRD SCENE */
+
+    var $projectwrap = $('.project__wrapper'); //each wrap of project
+    var $wrap1 = $('.project__wrapper--1');
+    var $wrap2 = $('.project__wrapper--2');
+    var $wrap3 = $('.project__wrapper--3');
+    var $projectImg = $('.project__img')
+    
+
+    var t3 = new TimelineLite();
+    t3
+    .to($wrap1, 3, {x: '15%'})
+    .to($wrap2, 3, {x: '-10%'},'-=2')
+    .to($wrap3, 2, {x: '5%'},'-=3')
+  
+
+
+    
+
+    var controller = new ScrollMagic.Controller(); 
+
+     var scene = new ScrollMagic.Scene({
+        triggerElement: '.projects__text-bg',
+        triggerHook: 0.5,
+        offset: -150,
+        reverse: 0
+     
+        
+    })
+    .setTween(t3)
+    .addIndicators()
+    .addTo(controller)
+   
+
 
 })
 

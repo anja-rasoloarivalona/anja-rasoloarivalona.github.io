@@ -1,8 +1,10 @@
 .projects {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     position: relative;
+    flex-grow: 1;
 
     &__text-bg {
         position: absolute;
@@ -13,7 +15,7 @@
         bottom: 0;
         left: 0;
         opacity: 0;
-        transform: translatey(-100%);
+        transform: translateY(-300%);
     }
 }
 
@@ -21,36 +23,49 @@
 
 
     &__wrapper {
-        border-radius: 1000px;
-        height: 25rem;
-        width: 25rem;
-        margin: 0 3.5rem;
+        background-image: 
+        linear-gradient(
+        rgba(black, .7),
+        rgba(black, .7)),
+        url('../img/img1.jpg');
+
+        height: 17rem; // 25rem;
+        width: 45rem; //25rem;
+        margin: 1rem 0;
         box-shadow: 0 10px 6px -6px rgb(36, 35, 35);
-        transform: translatey(-35%);
-        z-index: 6;
+        transform: translateY(-35%);
+        z-index: 900;
+        clip-path: polygon(0 100%,95% 100%,100% 0,5% 0);
+        background-position: center;
+        background-size: cover;
+
+        &--1 {
+            transform: translate(-50%, -55%)
+        }
+    
+        &--2 {
+            transform: translate(50%, -55%)
+        }
+    
+        &--3 {
+            transform: ttranslate(-50%, -10%)
+        }
+    
+    
     }
 
-    &__img {
-        height: 100%;
-        width: 100%;
-        position: center;
-        object-fit: cover;
-        border-radius: 1000px;
+    
+  
+        
+       
+   
+     
     }
 
-    &__wrapper--1 {
-        position: relative;
-    }
 
-    &__wrapper--2 {
-        position: absolute;
-    }
+    
 
-    &__wrapper--3 {
-        position: absolute;
-    }
 
-}
 
 
 
