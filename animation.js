@@ -42,8 +42,8 @@ $(document).ready(function(){
     .to($about, 3, {autoAlpha: 0}, '-=4')
     .to($projects, 7, {y: '15%'})  
     .to($projectsTextBgContainer, 1 , {autoAlpha: 1},'-=.5' )
-    .to($projects, 3 , {background: 'rgb(238, 235, 234)'},'-=2')
-    .to($projectsTextBgContainer, 1 , {opacity: .5},'+=4')
+    .to($projects, 8 , {background: 'rgb(238, 235, 234)'},'-=2')
+    .to($projectsTextBgContainer, 1 , {opacity: .5},'-=4')
     ;
 
      var controller = new ScrollMagic.Controller(); 

@@ -14,13 +14,13 @@ body {
     box-sizing: border-box;
     //background: var(--color-dark);
     overflow-x: hidden;
-    background: orange;
+    background: rgba(8, 8, 78, 0.747);
 }
 
 .container {
     display: grid;
     grid-template-columns: 15rem 1fr 10rem;
-    grid-template-rows: 100vh 130vh 100vh;
+    grid-template-rows: 100vh 100vh 100vh;
 }
 
 .sidebar {
