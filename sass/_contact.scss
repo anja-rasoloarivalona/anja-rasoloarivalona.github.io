@@ -10,11 +10,11 @@
     &__text-bg {
         z-index: 100;
         position:absolute;
-        bottom: 0;
+        top: 1rem;;
         left: 0;
     }
 
-    
+
     &__text__bg {
         font-size: 12rem;
         color: var(--color-white);

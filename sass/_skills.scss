@@ -10,6 +10,8 @@
          url("../img/skills.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    
 
 
     &__text-bg {
@@ -34,9 +36,7 @@
         width: 60%;
         margin: 6rem auto;
         color: var(--color-white);
-        align-items: center;
-
-       
+        align-items: center;  
     }
 
 
@@ -120,49 +120,10 @@
             top: 0;
             left: 0;
             background-color: #2187e7;
+            width: 0%;
 
         }
 
-
-        &--html {
-           width: 90%; 
-        }
-
-        &--css {
-            width: 88%
-        }
-
-        &--sass {
-            width: 95%;
-        }
-
-        &--bootstrap {
-            width: 65%;
-        }
-
-        &--es6 {
-            width: 75%;
-        }
-
-        &--jquery {
-            width: 85%;
-        }
-
-        &--react {
-            width: 50%;
-        }
-
-        &--sql {
-            width: 80%;
-        }
-
-        &--git {
-            width: 90%;
-        }
-
-        &--webpack {
-            width: 70%;
-        }
 
     }
 

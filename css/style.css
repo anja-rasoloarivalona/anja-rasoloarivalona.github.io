@@ -141,7 +141,7 @@ body {
   .contact__text-bg {
     z-index: 100;
     position: absolute;
-    bottom: 0;
+    top: 1rem;
     left: 0; }
   .contact__text__bg {
     font-size: 12rem;
@@ -309,7 +309,8 @@ body {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/skills.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .skills__text-bg {
     z-index: 100;
     position: absolute;
@@ -371,27 +372,8 @@ body {
       height: 100%;
       top: 0;
       left: 0;
-      background-color: #2187e7; }
-    .skills__bar--html {
-      width: 90%; }
-    .skills__bar--css {
-      width: 88%; }
-    .skills__bar--sass {
-      width: 95%; }
-    .skills__bar--bootstrap {
-      width: 65%; }
-    .skills__bar--es6 {
-      width: 75%; }
-    .skills__bar--jquery {
-      width: 85%; }
-    .skills__bar--react {
-      width: 50%; }
-    .skills__bar--sql {
-      width: 80%; }
-    .skills__bar--git {
-      width: 90%; }
-    .skills__bar--webpack {
-      width: 70%; }
+      background-color: #2187e7;
+      width: 0%; }
 
 body {
   font-family: 'Alegreya Sans', sans-serif; }

@@ -31,15 +31,16 @@ $(document).ready(function(){
     var t1 = new TimelineLite();
   
     t1
-      .set($about, {y: '60%'})
-      .set($sidebar,{y: '60%'})
+      .set($about, {y: '95%'})
+      .set($sidebar,{y: '95%'})
       .set($sidebarIcon, {autoAlpha: 0})
       .set($aboutTextBg, {autoAlpha: 0})
 
-      .to($about, 1,{y: '0%'})
+      .to($about, 1, {y: '0%'})
       .to($sidebar, 1,{y: '0%'}, '-=1')
       .to($sidebarIcon,1, {autoAlpha: 1})
       .to($aboutTextBg,1, {autoAlpha: 1},'-=1')
+      
 
 
     /* SECOND SCENE */
@@ -71,37 +72,50 @@ $(document).ready(function(){
 
     /* THIRD SCENE */
 
-    var $projectwrap = $('.project__wrapper'); //each wrap of project
-    var $wrap1 = $('.project__wrapper--1');
-    var $wrap2 = $('.project__wrapper--2');
-    var $wrap3 = $('.project__wrapper--3');
-    var $projectImg = $('.project__img')
+    var $html = $('.skills__bar--html');
+    var $css = $('.skills__bar--css');
+    var $boot = $('.skills__bar--bootstrap');
+    var $es6 = $('.skills__bar--es6');
+    var $jquery = $('.skills__bar--jquery');
+    var $react = $('.skills__bar--react');
+    var $git = $('.skills__bar--git');
     
-/*
+
     var t3 = new TimelineLite();
     t3
-    .to($wrap1, 3, {x: '15%'})
-    .to($wrap2, 3, {x: '-10%'},'-=2')
-    .to($wrap3, 2, {x: '5%'},'-=3')
-  
 
+   .set($html, {width: '0%'})
+   .set($css, {width: '0%'})
+   .set($boot, {width: '0%'})
+   .set($es6, {width: '0%'})
+   .set($jquery, {width: '0%'})
+   .set($react, {width: '0%'})
+   .set($git, {width: '0%'})
+
+   .to($html, 2, {width: '90%'})
+   .to($css,2, {width: '88%'},'-=1.5')
+   .to($es6,2, {width: '75%'},'-=2')
+   .to($react,2, {width: '50%'},'-=2')
+   .to($jquery,2, {width: '85%'},'-=2')
+   .to($boot, 2,{width: '65%'},'-=2')
+   .to($git,2, {width: '90%'},'-=2')
+   
+  
 
     
 
     var controller = new ScrollMagic.Controller(); 
 
      var scene = new ScrollMagic.Scene({
-        triggerElement: '.projects__text-bg',
+        triggerElement: '.skills__bar--html',
         triggerHook: 0.5,
-        offset: -150,
-        reverse: 0
-     
+        
         
     })
     .setTween(t3)
     .addIndicators()
-    .addTo(controller) */
-   
+    .addTo(controller) 
+    
 
 
 })
