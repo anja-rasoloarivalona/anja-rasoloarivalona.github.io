@@ -321,18 +321,77 @@ body {
     bottom: 0;
     left: 0;
     opacity: .7; }
-
-.skill__wrapper {
-  height: 30rem;
-  width: 30rem;
-  margin: 0 2rem;
-  box-shadow: 0 10px 6px -6px #242323; }
-
-.skill__img {
-  height: 100%;
-  width: 100%;
-  position: center;
-  object-fit: cover; }
+  .skills__wrapper {
+    list-style: none;
+    width: 60%;
+    margin: 6rem auto;
+    color: var(--color-white);
+    align-items: center; }
+  .skills__item {
+    margin: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: center; }
+  .skills__title {
+    grid-column: 1 /2;
+    display: flex;
+    align-items: center; }
+    .skills__title h3 {
+      font-size: 1.7rem;
+      color: var(--color-white);
+      margin-left: 5rem; }
+  .skills__icon {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover; }
+    .skills__icon--html {
+      fill: #E54C21; }
+    .skills__icon--css {
+      fill: #264DE4; }
+    .skills__icon--git {
+      fill: #F05033; }
+    .skills__icon--bootstrap {
+      fill: #18073D; }
+  .skills__amount {
+    grid-column: 2 /3;
+    width: 50%;
+    height: 3px; }
+  .skills__bar {
+    position: relative;
+    display: block;
+    background-color: #1b3263;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    box-shadow: 0 0 1rem #2187e7b3; }
+    .skills__bar__score {
+      position: absolute;
+      display: block;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #2187e7; }
+    .skills__bar--html {
+      width: 90%; }
+    .skills__bar--css {
+      width: 88%; }
+    .skills__bar--sass {
+      width: 95%; }
+    .skills__bar--bootstrap {
+      width: 65%; }
+    .skills__bar--es6 {
+      width: 75%; }
+    .skills__bar--jquery {
+      width: 85%; }
+    .skills__bar--react {
+      width: 50%; }
+    .skills__bar--sql {
+      width: 80%; }
+    .skills__bar--git {
+      width: 90%; }
+    .skills__bar--webpack {
+      width: 70%; }
 
 body {
   font-family: 'Alegreya Sans', sans-serif; }
