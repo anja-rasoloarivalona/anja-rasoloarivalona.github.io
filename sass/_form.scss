@@ -1,0 +1,72 @@
+.form {
+    transform: translateY(5rem);
+    width: 40%;
+    
+    //background-color: var(--color-white);
+
+    & form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__group {
+        margin-bottom: 2rem; 
+        width: 100%;  
+        display: flex;
+        flex-direction: column;  
+        flex-grow: 1;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit; 
+        color: var(--color-dark);
+        padding: 1.5rem 0;
+        border-radius: 2px;
+        background-color: var(--color-white);
+        border: none;
+        border-bottom: 3px solid transparent; // so none of the element is moving by 3px when focused
+        width: 100%;
+        display: block;
+        transition: all .3s;
+    }
+    
+    &:focus { 
+        outline: none; 
+        box-shadow: 0 1rem 2rem rgba(var(--color-dark), .1);
+        border-bottom: 3px solid var(--color-primary); //makes the element located after it to move down by 3px
+    }
+
+    &:focus:invalid {
+        border-bottom: 3px solid var(--color-dark);
+    }
+
+    
+
+    &::-webkit-input-placeholder { //pseudo element : real object on the page
+        color: var(--color-dark); //When you start typing, the color of the text becomes darker
+    }
+
+    &__label {
+        font-size: 2rem;
+        font-weight: 700;
+        //margin-left: 2rem; //To make it positioned exactly on same position which the text is on top
+        margin-top: .7rem;
+        display: block; //otherwise, we cannot really use these box model properties
+        transition: all .3s;
+        color: var(--color-white);
+    }
+
+    &__input:placeholder-shown + &__label { //as the label is not the child of the input, we use this direct/first sibling selector (IMPORTANT: it goes down, the sibling must be positionned below the element - see HTML
+        opacity: 0; //but still on the apge
+        visibility: hidden;  //so it's reaaly gone
+        transform: translateY(-4rem);
+    }
+
+    &__message {
+        height: 15rem;
+        resize: none
+    }
+}
