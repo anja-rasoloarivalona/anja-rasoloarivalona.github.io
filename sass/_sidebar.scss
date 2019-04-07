@@ -8,18 +8,41 @@
     width: 15rem;
 
     &__list {
-        width: 100%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
-        margin: 0 .5rem;
+        margin: 1.7rem 2rem;
         list-style: none;
+        height: 80%;
         flex-grow: 1;
+        transform: translateX(2.5rem);
 
         & li {
             transform: rotate(-90deg);
-            align-self: center;   
+            align-self: center; 
+            background: green;
+            width: 9.85rem;   
+            overflow: hidden;  
+            box-shadow: -3rem 0rem 4rem -2.2rem black;
         }  
+
+        & li:first-child {
+            border-radius: 0px 12px 12px 0px;
+        }
+
+        &li:nth-child(2) {
+            box-shadow: -1rem 0rem 1rem 0rem black;
+        }
+
+        &li:nth-child(3) {
+            box-shadow: 0rem 0rem 0rem 0rem black!important;
+        }
+
+        & li:last-child {
+            border-radius: 12px 0 0 12px;
+            box-shadow: -3rem 0rem 4rem -2rem black;
+        }
     }
 
 
@@ -32,6 +55,9 @@
     &__items::before {
         content: "";
         position: absolute;
+    
+        
+        /*
         transform: translateY(.5rem); //scale(0);
         left: 0; 
         height: 2.5rem;
@@ -39,7 +65,7 @@
         background-color: var(--color-white);
         transition: transform .1s,
                     width .4s cubic-bezier(1,0,0,1) .2s, // .2s is the delay here                    
-                    background-color .1s;
+                    background-color .1s;*/
     }
 
     &__links:link,
@@ -54,28 +80,30 @@
         padding: 1rem;
         position: relative;
         text-transform: uppercase; 
+       
     }
 
     &__items:hover {
-        transform: translate(-.5rem, -.5rem) rotate(-90deg);
+        transform: translate(.15rem, .05rem) rotate(-90deg);
+        box-shadow: -.2rem 0rem .2rem 0rem black;
+        background: rgb(1, 160, 81);
 
-        & .sidebar__links {
-            color: var(--color-dark);
-        }
+
+      
     }
 
 
-    &__items:hover::before,
-    &__items--active::before{
-        width: 100%;      
-    }
+
+
 
     &__items--active .sidebar__links {
-        color: var(--color-dark);
+        box-shadow: 0px 0px 0px 0px !important;
+      
     }
 
     &__items--active {
-       // transform: translate(-.5rem, -.5rem);
+       transform: translate(.15rem, .1rem) rotate(-90deg) !important;
+       
     }
 
 
