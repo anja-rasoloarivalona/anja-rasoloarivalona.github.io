@@ -48,7 +48,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-snap-type: block;
+  scroll-snap-type: y proximity;
+  scroll-snap-stop: normal;
   background: var(--color-primary); }
 
 .container {
@@ -306,7 +307,9 @@ body {
   align-items: center;
   z-index: 100;
   position: relative;
-  background: #08084e; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/skills.jpg");
+  background-position: center;
+  background-size: cover; }
   .skills__text-bg {
     z-index: 100;
     position: absolute;
@@ -317,7 +320,7 @@ body {
     color: var(--color-white);
     bottom: 0;
     left: 0;
-    opacity: 1; }
+    opacity: .7; }
 
 .skill__wrapper {
   height: 30rem;

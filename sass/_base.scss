@@ -17,7 +17,8 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
    // scroll-behavior: smooth;
-    scroll-snap-type: block;
+    scroll-snap-type: y proximity;
+    scroll-snap-stop: normal;
     //scroll-padding-top: 100px;
     //scroll-snap-points-y: repeat(100vh);
     background: var(--color-primary);

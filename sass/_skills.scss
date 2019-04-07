@@ -4,8 +4,12 @@
     align-items: center;
     z-index: 100;
     position: relative;
-    background: rgb(8, 8, 78);
-
+    background-image:linear-gradient(
+         rgba(black, 0.9),
+         rgba(black, 0.9)),
+         url("../img/skills.jpg");
+    background-position: center;
+    background-size: cover;
 
 
     &__text-bg {
@@ -22,7 +26,7 @@
         color: var(--color-white);
         bottom: 0;
         left: 0;
-        opacity: 1;
+        opacity: .7;
     }
   
 }
