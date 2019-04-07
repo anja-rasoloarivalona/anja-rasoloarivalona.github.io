@@ -41,14 +41,14 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-margin-top: 15vh;
+  scroll-snap-type: block;
   background: var(--color-primary); }
 
 .container {
@@ -65,7 +65,8 @@ body {
   grid-row: 1 / 2;
   grid-column: 2 / 4;
   z-index: 2;
-  scroll-snap-align: start; }
+  scroll-snap-align: end;
+  scroll-margin-bottom: -200px; }
 
 .layer-back {
   grid-row: 1 / 2;
@@ -81,12 +82,15 @@ body {
   grid-column: 2 / 4;
   z-index: 900;
   transform: translateY(300px);
-  scroll-snap-align: start; }
+  scroll-snap-align: end;
+  scroll-margin-top: 200px;
+  scroll-margin-bottom: 0px; }
 
 .skills {
   grid-row: 3 / 4;
   grid-column: 2 / 4;
-  scroll-snap-align: start; }
+  scroll-snap-align: end;
+  scroll-margin-top: -300px; }
 
 .contact {
   grid-row: 4 / 5;
