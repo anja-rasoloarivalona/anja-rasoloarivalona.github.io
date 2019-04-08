@@ -1,9 +1,11 @@
 .skills {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    position: relative;
+    position: absolute;
     background-image:linear-gradient(
          rgba(black, 0.9),
          rgba(black, 0.9)),
@@ -13,23 +15,6 @@
     background-attachment: fixed;
     
 
-
-    &__text-bg {
-
-        z-index: 100;
-        position:absolute;
-        bottom: 0;
-        left: 0;
-
-    }
-
-    &__text__bg {
-        font-size: 12rem;
-        color: var(--color-white);
-        bottom: 0;
-        left: 0;
-        opacity: .7;
-    }
 
     &__wrapper {
         list-style: none;

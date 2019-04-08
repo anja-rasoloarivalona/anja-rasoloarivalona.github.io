@@ -3,7 +3,7 @@ $(document).ready(function(){
   
     /* LAYOUT */
     var $projects = $('.projects');
-    var $about = $('.about');
+    
     
     var $sidebar = $('.sidebar');
     var $sidebarIcon= $('.media__icon');
@@ -23,27 +23,45 @@ $(document).ready(function(){
       return false;
   });
 
-  
-   
+  var $about = $('.about__container');
+  var $circle1 = $('.circle--1');
+  var $circle2 = $('.circle--2');
+  var $circle3 = $('.circle--3');
+  var $circle4 = $('.circle--4');
 
-    /* FIRST SCENE FIRED AT THE BEGINING */
+   var $upperligne1 = $('.upperligne--1');
+  var $upperligne2 = $('.upperligne--2');
+  var $upperligne3 = $('.upperligne--3');
+  var $upperligne4 = $('.upperligne--4');
+
+
+    /* FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   
     t1
-      .set($about, {y: '95%'})
-      .set($sidebar,{y: '95%'})
-      .set($sidebarIcon, {autoAlpha: 0})
-      .set($aboutTextBg, {autoAlpha: 0})
+    
+      .set($about, {autoAlpha: 0 ,scale: 0})
+      .set($circle1, {autoAlpha: 0, scale:0})
+      .set($circle2, {autoAlpha: 0, scale:0})
+      .set($circle3, {autoAlpha: 0, scale:0})
+      .set($circle4, {autoAlpha: 0, scale:0})
 
-      .to($about, 1, {y: '0%'})
-      .to($sidebar, 1,{y: '0%'}, '-=1')
-      .to($sidebarIcon,1, {autoAlpha: 1})
-      .to($aboutTextBg,1, {autoAlpha: 1},'-=1')
+
+
+  
+
+      .to($about, 1, {autoAlpha: 1, scale: 1})
+      .to($circle1, 1, {autoAlpha: 1, scale: 1},'+=1.6')
+      .to($circle2, 1, {autoAlpha: 1, scale: 1},'-=1')
+      .to($circle3, 1, {autoAlpha: 1, scale: 1}, '-=1')
+      .to($circle4, 1, {autoAlpha: 1, scale: 1},'-=1')
+     
+ 
       
 
 
-    /* SECOND SCENE */
+    /* SECOND SCENE 
 
     var t2 = new TimelineLite();
     t2
@@ -70,7 +88,7 @@ $(document).ready(function(){
     .addTo(controller);
 
 
-    /* THIRD SCENE */
+    /* THIRD SCENE 
 
     var $html = $('.skills__bar--html');
     var $css = $('.skills__bar--css');
@@ -131,18 +149,42 @@ $(document).ready(function(){
           console.log('OK NICE')
        }
        */
-      $( "#test" ).click(function() {
-        $(".swiper-button-prev").click();
-      });
-      
 
 
-     
+/*
+
+  TweenMax.from(".upperligne--1__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7);
+  TweenMax.from(".upperligne--2__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7);
+  TweenMax.from(".upperligne--3__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7);
+  TweenMax.from(".upperligne--4__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7); 
+
+
+  $( ".circle--1" ).click(function() {
+
+    TweenMax.to('.projects', 1.7, {
+      css: {
+        transform: 'translateY(0)', 
+      }
     })
+    
+  });
+
+  $( ".circle--2" ).click(function() {
+
+    TweenMax.to('.skills', 1.7, {
+      css: {
+        transform: 'translateY(0)', 
+      }
+    })
+    
+  });
+
+*/
+
   
 
 
-
+  });
 
 
 

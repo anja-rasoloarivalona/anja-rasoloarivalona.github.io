@@ -83,7 +83,7 @@
         text-align: center;
         font-size: 1.3rem;
         letter-spacing: .5px;
-        font-weight: 600;
+        font-weight: 400;
         padding: 1rem;
         position: relative;
         text-transform: uppercase; 
@@ -133,11 +133,12 @@
 .media {
     margin-bottom: 5rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+   transform: translateX(90px);
 
     &__icon {
-        margin: 1rem 0;
+        margin: 1rem 1rem;
         width: 3rem;
         height: 3rem;
         object-fit: cover;
