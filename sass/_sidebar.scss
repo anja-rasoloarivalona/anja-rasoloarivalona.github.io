@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
+        align-items: center;
         margin: 1.7rem 2rem;
         list-style: none;
         height: 80%;
@@ -21,7 +22,11 @@
         & li {
             transform: rotate(-90deg);
             align-self: center; 
-            background: green;
+            background-image: 
+            linear-gradient(to bottom,
+                rgba(#01011b, .8 ) 0%,
+                rgba(#01011b, .8 ) 50%,
+                rgba(#304385, .2 )85%);            
             width: 9.85rem;   
             overflow: hidden;  
             box-shadow: -3rem 0rem 4rem -2.2rem black;
@@ -76,17 +81,25 @@
         text-decoration: none;
         display: block;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        letter-spacing: .5px;
+        font-weight: 600;
         padding: 1rem;
         position: relative;
         text-transform: uppercase; 
+        transition: all .3s cubic-bezier(1,0,0,1);
        
     }
 
     &__items:hover {
         transform: translate(.15rem, .05rem) rotate(-90deg);
         box-shadow: -.2rem 0rem .2rem 0rem black;
-        background: rgb(1, 160, 81);
+        background: rgba(#01011b, .8) ;
+       
+
+        & .sidebar__links {
+            color: var(--color-white);
+        }
 
 
       

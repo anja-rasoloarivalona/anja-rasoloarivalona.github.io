@@ -20,7 +20,7 @@ body {
     scroll-snap-type: y proximity;
     scroll-snap-stop: normal;
 
-    background: white;
+    background: var(--color-secondary);
 }
 
 .container {
@@ -49,10 +49,10 @@ body {
 .layer-back {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    background-image:linear-gradient(
-         rgba(black, 0.9),
-         rgba(black, 0.9)),
-         url("../img/bg.jpg");
+    background-image:linear-gradient(to top,
+         rgba(#010124, .7),
+         rgba(#010124, .9)),
+         url("../img/bg3.jpg");
     background-position: center;
     background-size: cover;
     z-index: 1;

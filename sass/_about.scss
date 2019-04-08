@@ -7,12 +7,22 @@
 
     &__container {
         background-image: 
-        linear-gradient(105deg,
-            rgba(255, 255, 255, 0.9) 0%, 
-            rgba(255, 255, 255, 0.9) 50%, 
-            transparent 50%), 
-            url('../img/bg.jpg');
-        width: 70%;
+
+        linear-gradient(121deg,
+            rgba(#01011b, .8 ) 0%,
+            rgba(#01011b, .8 ) 40%,
+            rgba(#809ea7, .2 )85%),            
+            
+       
+       /* linear-gradient(121deg,
+            rgba(#01011b, .8 )0%,             
+            transparent 75%, 
+            rgba(#809ea7, .4 ) 75%), */
+            
+
+
+            url('../img/bg1.jpg');
+        width: 50%;
         height: 50%;
         background-size: cover;
         background-position: center;
@@ -29,7 +39,7 @@
         padding: 0 4rem;
         line-height: 1.3;
         text-align: center;
-        color: black;
+        color: var(--color-white);
 
         &__container {
             display: flex;

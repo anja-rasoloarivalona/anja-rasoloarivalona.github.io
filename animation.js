@@ -114,11 +114,32 @@ $(document).ready(function(){
     })
     .setTween(t3)
     .addIndicators()
-    .addTo(controller) 
-    
+    .addTo(controller) ;
 
 
-})
+
+   /* $('#email-submit').click(function(e) {
+
+       e.preventDefault();
+       console.log('clicked')
+
+       var email = $('#email').val();
+       var name = $('#name').val();
+       var message =$('#message').val();
+ 
+       if(email.length > 5 && email.includes('@') && email.includes('.')) {
+          console.log('OK NICE')
+       }
+       */
+      
+
+
+     
+    })
+  
+
+
+
 
 
 
