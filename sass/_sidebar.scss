@@ -54,7 +54,7 @@
 
     &__items {
         position: relative;
-        transition: all .3s cubic-bezier(1,0,0,1);
+        transition: all .0001s ;
     }
 
     &__items::before {

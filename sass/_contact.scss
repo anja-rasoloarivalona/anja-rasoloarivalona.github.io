@@ -4,7 +4,14 @@
     align-items: center;
     z-index: 100;
     position: relative;
-    background: rgb(8, 8, 78);
+
+    background-image:linear-gradient(to top,
+         rgba(#01010c, .7),
+         rgba(#01010f, .9)),
+         url("../img/bu.jpg");
+         background-position: center;
+         background-size: cover;
+         object-fit: cover;
 
 
     &__text-bg {

@@ -131,6 +131,9 @@ $(document).ready(function(){
           console.log('OK NICE')
        }
        */
+      $( "#test" ).click(function() {
+        $(".swiper-button-prev").click();
+      });
       
 
 

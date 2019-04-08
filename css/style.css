@@ -137,7 +137,10 @@ body {
   align-items: center;
   z-index: 100;
   position: relative;
-  background: #08084e; }
+  background-image: linear-gradient(to top, rgba(1, 1, 12, 0.7), rgba(1, 1, 15, 0.9)), url("../img/bu.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover; }
   .contact__text-bg {
     z-index: 100;
     position: absolute;
@@ -289,6 +292,11 @@ body {
     position: absolute;
     bottom: 7%; }
 
+.swiper-button-prev {
+  background-color: red !important;
+  width: 1rem !important;
+  height: 1rem !important; }
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -326,7 +334,7 @@ body {
       box-shadow: -3rem 0rem 4rem -2rem black; }
   .sidebar__items {
     position: relative;
-    transition: all 0.3s cubic-bezier(1, 0, 0, 1); }
+    transition: all .0001s; }
   .sidebar__items::before {
     content: "";
     position: absolute;

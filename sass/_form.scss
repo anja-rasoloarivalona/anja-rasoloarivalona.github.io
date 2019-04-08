@@ -36,7 +36,7 @@
     &:focus { 
         outline: none; 
         box-shadow: 0 1rem 2rem rgba(var(--color-dark), .1);
-        border-bottom: 3px solid var(--color-primary); //makes the element located after it to move down by 3px
+        border-bottom: 3px solid var(--color-primary); 
     }
 
     &:focus:invalid {
