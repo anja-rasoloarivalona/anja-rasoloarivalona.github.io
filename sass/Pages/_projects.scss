@@ -18,6 +18,7 @@
     }
 
     &__upperline {
+        z-index: 1;
 
         &--fromHome {
 
@@ -40,39 +41,39 @@
     }
 
 
-    .circle {
+    &__circle {
 
         &--1 {
             grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            transform: translate(0rem, 2rem);
+            grid-row: 2 / 3;
+            transform: translate(-5rem, 1rem);
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         &--2 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            transform: translate(0rem, 2rem);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        &--1 {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-            transform: translate(0rem, 2rem);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        &--1 {
             grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            transform: translate(0rem, 4rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--3 {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            transform: translate(10rem, -1rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--4 {
+            grid-column: 3 / 4;
             grid-row: 2 / 3;
-            transform: translate(0rem, 2rem);
+            transform: translate(13rem, 0rem);
             display: flex;
             align-items: center;
             justify-content: center; 
@@ -80,6 +81,8 @@
     }
 
     &__btn--toHome {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
         width: 12rem;
         height: 12rem;
         box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
@@ -89,7 +92,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 1000px;
+        border-radius: 1000px;     
+        transform: translate(-28rem, 0rem);
+        z-index: 2;
+        background-color: var(--color-white);
 
         &__icon {
             width: 9rem;
@@ -98,5 +104,119 @@
             transform: translateY(-.8rem);
         }
     }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__upperline{
+        
+        &--1 {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+            width: 18rem;
+            transform: rotate(143deg) translate(8rem, 18rem);
+            position: relative;
+
+        
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            } 
+        }
+
+        &--2 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            width: 18rem;
+            transform: rotate(143deg) translate(2rem, -16rem);
+            position: relative;
+
+        
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+        }
+
+        &--3 {
+            bottom: 0;
+            left: 0;
+            width: 30rem;
+            transform: rotate(30deg) translate(-2rem, -22rem);
+            position: absolute;
+        
+        
+
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+        }
+
+        &--4 {
+            bottom: 0;
+            right: 0;
+            width: 19rem;
+            transform: rotate(-41deg) translate(13rem, -17rem);
+            position: absolute;
+        
+
+        
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+
+        }
+
+        &--5 {
+            top: 0;
+            right: 0;
+            width: 28rem;
+            transform: rotate(30deg) translate(12rem, 21rem);
+            position: absolute;
+
+        
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+        }
+    }
+
+
+
+
+
+
+
 
 }

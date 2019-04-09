@@ -18,37 +18,10 @@ $(document).ready(function(){
     var $homeCircleMain = $('.home__main')
 
 
-    $( ".project__btn--home" ).click(function() {
-
-      TweenMax.to('.home', 1.7, {
-        css: {
-          transform: 'translateY(0%)', 
-        }
-      })
-
-      TweenMax.to('.container__layer', 1.7, {
-        css: {
-          transform: 'translateY(0%)', 
-        }
-      })
-    });
+    
 
   
-    $( ".home__circle--1" ).click(function() {
-  
-      TweenMax.to('.home', 1.31, {
-        css: {
-          transform: 'translateY(100%)', 
-        }
-      })
-
-      TweenMax.to('.container__layer', 1.2, {
-        css: {
-          transform: 'translateY(100%)', 
-        }
-      })
-      
-    });
+    
 
 
     /*FIRST SCENE FIRED AT THE BEGINING 
