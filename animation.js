@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     $( ".project__btn--home" ).click(function() {
 
-      TweenMax.to('.main', 1.7, {
+      TweenMax.to('.home', 1.7, {
         css: {
           transform: 'translateY(0%)', 
         }
@@ -34,15 +34,15 @@ $(document).ready(function(){
     });
 
   
-    $( ".circle--1" ).click(function() {
+    $( ".home__circle--1" ).click(function() {
   
-      TweenMax.to('.main', 1.7, {
+      TweenMax.to('.home', 1.31, {
         css: {
           transform: 'translateY(100%)', 
         }
       })
 
-      TweenMax.to('.container__layer', 1.7, {
+      TweenMax.to('.container__layer', 1.2, {
         css: {
           transform: 'translateY(100%)', 
         }
@@ -51,7 +51,7 @@ $(document).ready(function(){
     });
 
 
-    //FIRST SCENE FIRED AT THE BEGINING 
+    /*FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   

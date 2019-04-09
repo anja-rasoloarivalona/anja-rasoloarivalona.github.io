@@ -39,6 +39,8 @@ body {
         background-size:cover;
         background-repeat: no-repeat;
         z-index:4;
+
+        transform: translateY(100%);
     }
 }
 
@@ -50,13 +52,17 @@ body {
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-    z-index: 4;           
-}
+    z-index: 4;  
 
+    transform: translateY(100%);         
+}
 
 .projects {
-  //  transform: translateY(-100%);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    z-index: 3;  
 }
+
 
 .skills {
     transform: translateY(100%);

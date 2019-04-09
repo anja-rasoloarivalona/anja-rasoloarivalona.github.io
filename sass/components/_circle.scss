@@ -4,8 +4,18 @@
     overflow: hidden;
     position: relative;
     border: 3px solid var(--color-upperline__in);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.circle__icon {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
 
 
 .btn--circle {
