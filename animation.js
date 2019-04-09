@@ -56,7 +56,7 @@ $(document).ready(function(){
   var $upperligne4 = $('.upperligne--4');
 
 
-    //FIRST SCENE FIRED AT THE BEGINING 
+    /*FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   

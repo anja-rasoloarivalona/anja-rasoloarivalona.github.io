@@ -74,9 +74,9 @@ body {
 .upperligne {
   display: block;
   height: 5px;
-  background-color: #1b3263;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 1rem #2187e7b3;
+  background-color: var(--color-upperline-bg);
+  border: var(--color-upperline-border);
+  box-shadow: var(--shadow-upperline);
   z-index: 1; }
   .upperligne--1 {
     grid-row: 1 / 2;
@@ -123,8 +123,8 @@ body {
   .upperligne--4 {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
-    width: 12.8rem;
-    transform: rotate(78deg) translate(-18rem, 8rem);
+    width: 5.8rem;
+    transform: rotate(78deg) translate(-20rem, 8rem);
     position: relative; }
     .upperligne--4__in {
       display: block;
@@ -160,7 +160,7 @@ body {
   .circle--4 {
     grid-column: 3 /4;
     grid-row: 3 / 4;
-    transform: translate(-9rem, -2rem); }
+    transform: translate(-9rem, -7rem); }
 
 .btn {
   /* FOR THIS PROJECT ONLY */
@@ -204,7 +204,7 @@ body {
   box-shadow: 0rem 3rem 3rem -2rem #292828;
   overflow: hidden;
   position: relative;
-  border: 3px solid #2187e7; }
+  border: 3px solid var(--color-upperline__in); }
 
 .btn--circle {
   position: absolute;
@@ -468,4 +468,8 @@ body {
   --color-secondary: #093749;
   --color-tertiary: #106585;
   --color-dark: #020307;
-  --color-white: rgb(235, 227, 227); }
+  --color-white: rgb(235, 227, 227);
+  --color-upperline-bg: #1b3263;
+  --color-upperline-border: 1px solid rgba(0,0,0, .3);
+  --shadow-upperline: 0 0 1rem #2187e7b3;
+  --color-upperline__in: #2187e7; }

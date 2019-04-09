@@ -1,11 +1,16 @@
-@import "about";
+@import "components/button";
+@import "components/circle";
+@import "components/form";
+
+
+@import "pages/contact";
+@import "pages/home";
+@import "pages/projects";
+@import "pages/skills";
+
+
+
 @import "base";
-@import "button";
-@import "circle";
-@import "contact";
-@import "form";
-@import "projects";
-@import "skills";
 @import "typography";
 @import "variables";
 
