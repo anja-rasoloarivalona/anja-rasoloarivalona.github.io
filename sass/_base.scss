@@ -29,7 +29,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 50vw 1fr;
     grid-template-rows: 100vh;
-    background-image:    url("../img/bo.jpg");
+    background-image:linear-gradient(
+         rgba(black, 0.6),
+         rgba(black, 0.6)),
+         url("../img/bo.jpg");
     background-position: center;
     background-size:cover;
     position: relative;
@@ -37,7 +40,7 @@ body {
 }
 
 .projects {
-    transform: translateY(-100%);
+    //transform: translateY(-100%);
 }
 
 .skills {
@@ -70,6 +73,13 @@ body {
     background-position: center;
     transform: translate(6rem, -7rem);
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
 
 
 
@@ -78,7 +88,9 @@ body {
 .upperligne {
     display: block;   
     height: 5px;
-    background-color:  transparent;
+    background-color: #1b3263;
+    border: 1px solid rgba(0,0,0, .3);
+    box-shadow: 0 0 1rem #2187e7b3;
     z-index: 1;
  
 
@@ -93,9 +105,9 @@ body {
 
         &__in {
             display: block;
-            height: 4px;
+            height: 5px;
             width: 100%;
-            background-color: blue;
+            background-color: #2187e7;
             position: absolute;
             right: 0;
             z-index: 2;
@@ -115,9 +127,9 @@ body {
 
         &__in {
             display: block;
-            height: 4px;
+            height: 5px;
             width: 100%;
-            background-color: blue;
+            background-color: #2187e7;
             position: absolute;
             right: 0;
             z-index: 90;
@@ -134,9 +146,9 @@ body {
 
         &__in {
             display: block;
-            height: 4px;
+            height: 5px;
             width: 100%;
-            background-color: blue;
+            background-color: #2187e7;
             position: absolute;
             right: 0;
             z-index: 90;
@@ -152,9 +164,9 @@ body {
 
         &__in {
             display: block;
-            height: 4px;
+            height: 5px;
             width: 100%;
-            background-color: blue;
+            background-color: #2187e7;
             position: absolute;
             left: 0;
             z-index: 90;

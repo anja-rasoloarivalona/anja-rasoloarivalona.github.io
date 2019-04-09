@@ -51,4 +51,10 @@
         color: var(--color-primary);
     }
 
+    &--circle {
+        background: rgb(235, 103, 16);
+        border: 1px solid rgb(184, 187, 223);
+        color: var(--color-primary);
+    }
+
 }

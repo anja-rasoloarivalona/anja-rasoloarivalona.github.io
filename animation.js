@@ -35,7 +35,7 @@ $(document).ready(function(){
   var $upperligne4 = $('.upperligne--4');
 
 
-    /* FIRST SCENE FIRED AT THE BEGINING 
+    /*FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   
@@ -51,12 +51,18 @@ $(document).ready(function(){
 
   
 
-      .to($about, 1, {autoAlpha: 1, scale: 1})
+      .to($about, 1, {autoAlpha: 1, scale: 1}, '+=.5')
       .to($circle1, 1, {autoAlpha: 1, scale: 1},'+=1.6')
       .to($circle2, 1, {autoAlpha: 1, scale: 1},'-=1')
       .to($circle3, 1, {autoAlpha: 1, scale: 1}, '-=1')
       .to($circle4, 1, {autoAlpha: 1, scale: 1},'-=1')
-     
+
+      TweenMax.from(".upperligne", 2, {opacity: "0", ease:Power0.easeNone}).delay(1); 
+     TweenMax.from(".upperligne--1__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
+    TweenMax.from(".upperligne--2__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
+    TweenMax.from(".upperligne--3__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
+    TweenMax.from(".upperligne--4__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2); 
+
  
       
 
@@ -151,12 +157,9 @@ $(document).ready(function(){
        */
 
 
-/*
 
-  TweenMax.from(".upperligne--1__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7);
-  TweenMax.from(".upperligne--2__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7);
-  TweenMax.from(".upperligne--3__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7);
-  TweenMax.from(".upperligne--4__in", 2, {width: "0px", ease:Power0.easeNone}).delay(.7); 
+
+  
 
 
   $( ".circle--1" ).click(function() {
@@ -179,7 +182,7 @@ $(document).ready(function(){
     
   });
 
-*/
+
 
   
 
