@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 50vw 1fr;
     grid-template-rows: 100vh;
     position: relative;
+    background-image: url('../img/abc.jpg');
+    background-position: center;
+    background-size: cover;
     
 
 
@@ -112,7 +115,8 @@
     }
 
     &__upperline{
-        
+
+
         &--1 {
             grid-row: 3 / 4;
             grid-column: 1 / 2;
@@ -166,7 +170,7 @@
                 width: 100%;
                 background-color: var(--color-upperline__in);
                 position: absolute;
-                right: 0;
+                left: 0;
                 z-index: 2;
             }
         }
@@ -174,9 +178,10 @@
         &--4 {
             bottom: 0;
             right: 0;
-            width: 19rem;
-            transform: rotate(-41deg) translate(13rem, -17rem);
+            width: 17.5rem;
+            transform: rotate(-41deg) translate(12rem, -17rem);
             position: absolute;
+        
         
 
         
@@ -186,7 +191,7 @@
                 width: 100%;
                 background-color: var(--color-upperline__in);
                 position: absolute;
-                right: 0;
+                left: 0;
                 z-index: 2;
             }
 
@@ -195,8 +200,8 @@
         &--5 {
             top: 0;
             right: 0;
-            width: 28rem;
-            transform: rotate(30deg) translate(12rem, 21rem);
+            width: 26rem;
+            transform: rotate(30deg) translate(8rem, 23rem);
             position: absolute;
 
         
@@ -206,7 +211,7 @@
                 width: 100%;
                 background-color: var(--color-upperline__in);
                 position: absolute;
-                right: 0;
+                left: 0;
                 z-index: 2;
             }
         }

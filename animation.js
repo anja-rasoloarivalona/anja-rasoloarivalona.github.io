@@ -35,7 +35,7 @@ $(document).ready(function(){
       .set($homeCircle3, {autoAlpha: 0, scale:0})
       .set($homeCircle4, {autoAlpha: 0, scale:0})
 
-      .set($homeToProject, {autoAlpha: 0, scale:0})
+   
 
 
 

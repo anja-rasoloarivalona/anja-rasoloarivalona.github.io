@@ -12,9 +12,7 @@
          url("../img/skills.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    
-
+ 
 
     &__wrapper {
         list-style: none;
@@ -68,13 +66,6 @@
         }
     }
 
-
-
-
-
-
-
-
     &__amount {
         grid-column: 2 /3;
         //margin-left: 2rem;
@@ -82,8 +73,6 @@
         height: 3px;
        // background-color: red;
     }
-
-
 
     &__bar {
         position: relative;
@@ -114,6 +103,36 @@
     }
 
   
+}
+
+
+
+.skills__btn--toHome {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
+    overflow: hidden;
+    border: 3px solid var(--color-upperline__in);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px; 
+    background-color: var(--color-white);
+    z-index: 50;
+
+    &__icon {
+       width: 9rem;
+        height: 9rem;
+        object-fit: cover; 
+
+
+
+
+    }
 }
 
 
