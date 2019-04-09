@@ -3,25 +3,46 @@ $(document).ready(function(){
   
     /* LAYOUT */
     var $projects = $('.projects');
+
+
+    $( ".project__btn--home" ).click(function() {
+
+      TweenMax.to('.main', 1.7, {
+        css: {
+          transform: 'translateY(0%)', 
+        }
+      })
+
+      TweenMax.to('.container__layer', 1.7, {
+        css: {
+          transform: 'translateY(0%)', 
+        }
+      })
+    });
+
+  
+    $( ".circle--1" ).click(function() {
+  
+      TweenMax.to('.main', 1.7, {
+        css: {
+          transform: 'translateY(100%)', 
+        }
+      })
+
+      TweenMax.to('.container__layer', 1.7, {
+        css: {
+          transform: 'translateY(100%)', 
+        }
+      })
+      
+    });
+
     
-    
-    var $sidebar = $('.sidebar');
-    var $sidebarIcon= $('.media__icon');
-
-    /* CUSTOM */
-    var $aboutTextBgContainer = $('.about__text-bg');
-    var $aboutTextBg = $('.about__text__bg');
-
-    var $projectsTextBgContainer= $('.projects__text-bg');
-    var $projectsTextBg = $('.projects__text__bg');
-
-    var $slide = $('.swiper-slide');
-    
-
+/*
     $('.smooth-goto').on('click', function() {  
       $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
       return false;
-  });
+  });  */
 
   var $about = $('.about__container');
   var $circle1 = $('.circle--1');
@@ -35,7 +56,7 @@ $(document).ready(function(){
   var $upperligne4 = $('.upperligne--4');
 
 
-    /*FIRST SCENE FIRED AT THE BEGINING 
+    //FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   
@@ -162,25 +183,7 @@ $(document).ready(function(){
   
 
 
-  $( ".circle--1" ).click(function() {
-
-    TweenMax.to('.projects', 1.7, {
-      css: {
-        transform: 'translateY(0)', 
-      }
-    })
-    
-  });
-
-  $( ".circle--2" ).click(function() {
-
-    TweenMax.to('.skills', 1.7, {
-      css: {
-        transform: 'translateY(0)', 
-      }
-    })
-    
-  });
+  
 
 
 

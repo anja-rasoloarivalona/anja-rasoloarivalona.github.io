@@ -1,41 +1,56 @@
 .projects {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
     margin: 0;
     padding: 0;
-    background: blue;
+    background: rgb(129, 129, 156);
+    display: grid;
+    grid-template-columns: 1fr 50rem 1fr; 
+
+
    
 
 }
 
+.sidebar {
+    background-color: #E54C21;
+}
+
 
 .swiper-container {
-    position: relative;
-    width: 90%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 900;
-    transform: translateY(3.5rem);
-  }
+    grid-column: 2 /3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 95%;
+    height: 95%;
+    margin: 10rem 15rem;
+}
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: rgba(white, .8);
+   // background: rgba(white, .8);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 901;  
+    z-index: 2;  
 }
 
 .project {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(var(--color-white), .8);
+  //  background-color: rgba(var(--color-white), .8);
     position: relative;
+
+    &__btn--home {
+        width: 3rem;
+        height: 3rem;
+    }
 
     &__img__container {
         margin: 0 1rem;
@@ -113,11 +128,8 @@
 
 }
 
-.swiper-button-prev {
-    background-color:  red !important;
-    width: 1rem !important; 
-    height: 1rem !important;
-}
+
+
 
 
 

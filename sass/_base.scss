@@ -29,18 +29,27 @@ body {
     display: grid;
     grid-template-columns: 1fr 50vw 1fr;
     grid-template-rows: 100vh;
-    background-image:linear-gradient(
-         rgba(black, 0.6),
-         rgba(black, 0.6)),
-         url("../img/bo.jpg");
-    background-position: center;
-    background-size:cover;
     position: relative;
-    background-repeat: no-repeat;
+    z-index: 3;
+
+    &__layer {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        width: 100%;
+        height: 100%;
+       background-image:linear-gradient(
+        rgba(black, 0.6),
+        rgba(black, 0.6)),
+        url("../img/bo.jpg");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        z-index:4;
+    }
 }
 
 .projects {
-    //transform: translateY(-100%);
+  //  transform: translateY(-100%);
 }
 
 .skills {
@@ -49,11 +58,15 @@ body {
 
 .main {
         grid-column: 2 / 3;
+        grid-row: 1 / 2;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
         align-items: center;
+        z-index: 4;
+
+        
         
     }
 
@@ -121,8 +134,8 @@ body {
 
         grid-row: 3 / 4;
         grid-column: 1 / 2;
-        width: 18.5rem;
-        transform: rotate(-51deg) translate(24rem, 2rem);
+        width: 18.8rem;
+        transform: rotate(-51deg) translate(23rem, 2rem);
         position: relative;
 
         &__in {
@@ -159,7 +172,7 @@ body {
         grid-row: 3 / 4;
         grid-column: 3 / 4;
         width: 12.8rem;
-    transform: rotate(78deg) translate(-18rem, 8rem);
+        transform: rotate(78deg) translate(-18rem, 8rem);
         position: relative;
 
         &__in {
@@ -210,7 +223,7 @@ body {
     &--4 {
         grid-column: 3 /4;      
         grid-row: 3 / 4;
-        transform: translate(-9rem, -1rem);
+        transform: translate(-9rem, -2rem);
     }
 }
 
