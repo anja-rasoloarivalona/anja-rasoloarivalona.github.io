@@ -15,14 +15,8 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: hidden;
-
     justify-items: center;
     align-items: center;
-
-   /* scroll-snap-type: y proximity;
-    scroll-snap-stop: normal;
-
-    background: var(--color-secondary);*/
 }
 
 .container {
@@ -48,6 +42,18 @@ body {
     }
 }
 
+.home {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    z-index: 4;           
+}
+
+
 .projects {
   //  transform: translateY(-100%);
 }
@@ -56,135 +62,15 @@ body {
     transform: translateY(100%);
 }
 
-.main {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        justify-items: center;
-        align-items: center;
-        z-index: 4;
-
-        
-        
-    }
-
-.about__container {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    justify-items: center;
-    align-items: center;
-    width: 25rem;
-    border-radius: 1000px;
-    height: 25rem;
-    background-image:linear-gradient(
-        rgba(rgb(7, 7, 7), 0.6),
-        rgba(rgb(8, 8, 8), 0.6)),
-        url("../img/bg1.jpg");
-    background-size: cover;
-    background-position: center;
-    transform: translate(6rem, -7rem);
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--color-white);
-    padding: 0 1.5rem;
-    font-size: 1.3rem;
 
 
-
-    }
-
-.upperligne {
+.upperline {
     display: block;   
     height: 5px;
     background-color: var(--color-upperline-bg );
     border: var(--color-upperline-border);
     box-shadow: var(--shadow-upperline);
     z-index: 1;
- 
-
-
-    &--1 {
-        grid-row: 1 / 2;
-        grid-column: 1 / span 2;
-        width: 15rem;
-        transform: rotate(33deg) translate(7rem, 10rem);
-        position: relative;
-       
-
-        &__in {
-            display: block;
-            height: 5px;
-            width: 100%;
-            background-color: #2187e7;
-            position: absolute;
-            right: 0;
-            z-index: 2;
-        }    
-    }
-
-
-
-
-    &--2 {
-
-        grid-row: 3 / 4;
-        grid-column: 1 / 2;
-        width: 18.8rem;
-        transform: rotate(-51deg) translate(23rem, 2rem);
-        position: relative;
-
-        &__in {
-            display: block;
-            height: 5px;
-            width: 100%;
-            background-color: #2187e7;
-            position: absolute;
-            right: 0;
-            z-index: 90;
-        }
-    }
-
-    &--3 {
-        grid-row: 1 / 2;
-        grid-column: 3 / 4;
-        width: 11.8rem;
-        transform: rotate(143deg) translate(8rem, -6rem);     
-        position: relative;
-
-        &__in {
-            display: block;
-            height: 5px;
-            width: 100%;
-            background-color: #2187e7;
-            position: absolute;
-            right: 0;
-            z-index: 90;
-        }
-    }
-
-    &--4 {
-        grid-row: 3 / 4;
-        grid-column: 3 / 4;
-        width: 5.8rem;
-        transform: rotate(78deg) translate(-20rem, 8rem);
-        position: relative;
-
-        &__in {
-            display: block;
-            height: 5px;
-            width: 100%;
-            background-color: #2187e7;
-            position: absolute;
-            left: 0;
-            z-index: 90;
-        }
-    }
-
 }
 
 .circle {
@@ -193,38 +79,7 @@ body {
     height: 18rem;
     border-radius: 1000px;
     background-color: white;
-    z-index:5;
-    
-
-    &--1 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        transform: translate(0rem, 2rem);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-  
-    }
-
-    &--2{
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-        transform: translate(4rem, -4rem);
-    }
-
-    &--3 {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        transform: translate(9.6rem, 1.6rem);
-    }
-
-    &--4 {
-        grid-column: 3 /4;
-        grid-row: 3 / 4;
-        transform: translate(-9rem, -7rem);
-
-    }
+    z-index:5;     
 }
 
 

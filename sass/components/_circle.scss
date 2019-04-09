@@ -1,4 +1,4 @@
-.about__container,
+.home__main,
 .circle {
     box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
     overflow: hidden;
@@ -6,6 +6,7 @@
     border: 3px solid var(--color-upperline__in);
     
 }
+
 
 .btn--circle {
     position: absolute;
@@ -15,11 +16,6 @@
     transform: translateX(-4rem);
     transition: all 2s ease-in-out;
 }
-
-
-
-
-
 
 
 .circle--1:hover {
@@ -34,33 +30,7 @@
 
 
 
-.circle {
-   
 
-    &__icon {
-        width: 8rem;
-        width: 8rem;
-        object-fit: cover;
-        z-index: 2000;
-
-        &--1 {
-            transform: translate(4.1rem, -0.8rem);
-            transition: all .8s ease-in-out;
-        }
-
-        &--2 {
-            transform: translate(4.9rem, 4.6rem);
-        }
-
-        &--3 {
-            transform: translate(5rem, 4.9rem);
-        }
-
-        &--4 {
-            transform: translate(4.6rem, 4.2rem);
-        }
-    }
-}
 
 
 
