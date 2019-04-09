@@ -3,6 +3,19 @@ $(document).ready(function(){
   
     /* LAYOUT */
     var $projects = $('.projects');
+    var $home = $('.home');
+
+    var $homeLine1 = $('.home__upperline--1 ')
+    var $homeLine2 = $('.home__upperline--2 ')
+    var $homeLine3 = $('.home__upperline--3 ')
+    var $homeLine4 = $('.home__upperline--4 ')
+    var $homeToProject = $('.home__upperline--toProjects')
+
+    var $homeCircle1 = $('.home__circle--1')
+    var $homeCircle2 = $('.home__circle--2')
+    var $homeCircle3 = $('.home__circle--3')
+    var $homeCircle4 = $('.home__circle--4')
+    var $homeCircleMain = $('.home__main')
 
 
     $( ".project__btn--home" ).click(function() {
@@ -37,52 +50,33 @@ $(document).ready(function(){
       
     });
 
-    
-/*
-    $('.smooth-goto').on('click', function() {  
-      $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
-      return false;
-  });  */
 
-  var $about = $('.about__container');
-  var $circle1 = $('.circle--1');
-  var $circle2 = $('.circle--2');
-  var $circle3 = $('.circle--3');
-  var $circle4 = $('.circle--4');
-
-   var $upperligne1 = $('.upperligne--1');
-  var $upperligne2 = $('.upperligne--2');
-  var $upperligne3 = $('.upperligne--3');
-  var $upperligne4 = $('.upperligne--4');
-
-
-    /*FIRST SCENE FIRED AT THE BEGINING 
+    //FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   
-    t1
-    
-      .set($about, {autoAlpha: 0 ,scale: 0})
-      .set($circle1, {autoAlpha: 0, scale:0})
-      .set($circle2, {autoAlpha: 0, scale:0})
-      .set($circle3, {autoAlpha: 0, scale:0})
-      .set($circle4, {autoAlpha: 0, scale:0})
+    t1  
+      .set($homeCircleMain, {autoAlpha: 0 ,scale: 0})
+      .set($homeCircle1, {autoAlpha: 0, scale:0})
+      .set($homeCircle2, {autoAlpha: 0, scale:0})
+      .set($homeCircle3, {autoAlpha: 0, scale:0})
+      .set($homeCircle4, {autoAlpha: 0, scale:0})
+
+      .set($homeToProject, {autoAlpha: 0, scale:0})
 
 
 
-  
+      .to($homeCircleMain, 1, {autoAlpha: 1, scale: 1}, '+=.5')
+      .to($homeCircle1, 1, {autoAlpha: 1, scale: 1},'+=1.6')
+      .to($homeCircle2, 1, {autoAlpha: 1, scale: 1},'-=1')
+      .to($homeCircle3, 1, {autoAlpha: 1, scale: 1}, '-=1')
+      .to($homeCircle4, 1, {autoAlpha: 1, scale: 1},'-=1')
 
-      .to($about, 1, {autoAlpha: 1, scale: 1}, '+=.5')
-      .to($circle1, 1, {autoAlpha: 1, scale: 1},'+=1.6')
-      .to($circle2, 1, {autoAlpha: 1, scale: 1},'-=1')
-      .to($circle3, 1, {autoAlpha: 1, scale: 1}, '-=1')
-      .to($circle4, 1, {autoAlpha: 1, scale: 1},'-=1')
-
-      TweenMax.from(".upperligne", 2, {opacity: "0", ease:Power0.easeNone}).delay(1); 
-     TweenMax.from(".upperligne--1__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
-    TweenMax.from(".upperligne--2__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
-    TweenMax.from(".upperligne--3__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
-    TweenMax.from(".upperligne--4__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2); 
+    TweenMax.from(".upperline", 2, {opacity: "0", ease:Power0.easeNone}).delay(1); 
+    TweenMax.from(".home__upperline--1__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
+    TweenMax.from(".home__upperline--2__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
+    TweenMax.from(".home__upperline--3__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
+    TweenMax.from(".home__upperline--4__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2); 
 
  
       
