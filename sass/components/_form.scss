@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr  50vw 1fr;
     grid-template-rows: repeat(3, 1fr); 
-    z-index: 1000;
+    z-index: 10000;
     position: absolute;
     justify-items: center;
     align-items: center;

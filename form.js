@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
 
-    $( ".home__circle--2 circle" ).click(function() {
+    $( ".home__circle--2" ).click(function() {
 
         TweenMax.to('.form', 1.69, {
           css: {transform: 'translateY(0%)'}
