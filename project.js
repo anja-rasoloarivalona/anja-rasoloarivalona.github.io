@@ -68,6 +68,7 @@ $(document).ready(function(){
     TweenMax.from(".projects__upperline--2__in", .6, {width: "0px", ease:Power0.easeNone}).delay(3.5);
     TweenMax.from(".projects__upperline--3__in", .6, {width: "0px", ease:Power0.easeNone}).delay(1.8);
     TweenMax.from(".projects__upperline--4__in", .6, {width: "0px", ease:Power0.easeNone}).delay(3.5);
+    TweenMax.from(".projects__layer", .6, {opacity: "0", ease:Power0.easeNone}).delay(4.5);
   
 
  /*   $('.container__layer').addClass("stopAnimation");
