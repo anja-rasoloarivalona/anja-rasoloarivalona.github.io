@@ -1,29 +1,60 @@
 .form {
-    transform: translateY(5rem);
-    width: 40%;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr  50vw 1fr;
+    grid-template-rows: repeat(3, 1fr); 
+    z-index: 1000;
+    position: absolute;
+    justify-items: center;
+    align-items: center;
     
-    //background-color: var(--color-white);
+
+    &__layer {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        width: 100vw;
+        height: 100vh;
+        background: orange;
+       ;
+    }
 
     & form {
-        width: 100%;
+        border: 3px solid var(--color-upperline__in);
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        width: 58%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-image:linear-gradient(
+        rgba(black, 0.6),
+        rgba(black, 0.6)),
+        url("../img/bo.jpg");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        z-index: 400;
     }
     &__group {
-        margin-bottom: 2rem; 
         width: 100%;  
         display: flex;
         flex-direction: column;  
         flex-grow: 1;
+
+        &:first-child {
+            padding-top: 1rem;
+        }
     }
 
     &__input {
         font-size: 1.5rem;
         font-family: inherit; 
         color: var(--color-dark);
-        padding: 1.5rem 0;
+        padding: 1.3rem 0;
         border-radius: 2px;
         background-color: var(--color-white);
         border: none;
@@ -51,12 +82,13 @@
 
     &__label {
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 400;
         //margin-left: 2rem; //To make it positioned exactly on same position which the text is on top
-        margin-top: .7rem;
+        margin-top: .5rem 0;
         display: block; //otherwise, we cannot really use these box model properties
         transition: all .3s;
         color: var(--color-white);
+ 
     }
 
     &__input:placeholder-shown + &__label { //as the label is not the child of the input, we use this direct/first sibling selector (IMPORTANT: it goes down, the sibling must be positionned below the element - see HTML
@@ -69,4 +101,170 @@
         height: 15rem;
         resize: none
     }
+
+
+    &__circle {
+        
+        &--1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+
+            
+        }
+
+        &--2 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            
+        }
+
+        &--3 {
+            grid-column: 1 / 2;
+            grid-row: 3 /4;
+        }
+
+        &--4 {
+            grid-column: 3 / 4;
+            grid-row: 3 /4;
+        }
+    }
+
+    &__icon {
+        width: 9rem;
+        height: 9rem;
+        object-fit: cover;
+        transform: translate(4.3rem, 4rem);
+    }
+
+
+    &__upperline{
+
+
+        &--1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 31rem;
+            transform: rotate(-27deg) translate(-29rem, 10.5rem);
+        
+        
+
+        
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            } 
+        }
+
+        &--2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 31rem;
+            transform: rotate(30deg) translate(28rem, 9rem);
+
+        
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+        }
+
+        &--3 {
+            bottom: 0;
+            right: 0;
+            width: 29rem;
+            transform: rotate(26deg) translate(-27rem, -6rem);
+            position: absolute;
+
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                left: 0;
+                z-index: 2;
+            }
+        }
+
+        &--4 {
+            bottom: 0;
+            left: 0;
+            width: 27rem;
+            transform: rotate(-21deg) translate(29rem, -7.7rem);
+            position: absolute;
+
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                left: 0;
+                z-index: 2;
+            }
+
+        }
+
+        &--sup {
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 14.5rem;
+            transform: rotate(90deg) translate(7rem, -61rem);
+            position: absolute;
+        
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                left: 0;
+                z-index: 2;
+                    }
+
+            }
+
+    }
+
+    &__btn--toHome {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 9rem;
+        height: 9rem;
+        box-shadow: 0rem 3rem 3rem -2rem #292828;
+        overflow: hidden;
+        border: 3px solid var(--color-upperline__in);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1000px;
+        background-color: var(--color-white);
+        z-index: 50;
+        transform: translate(62.5rem, -2rem);
+
+    &__icon {
+       width: 7rem;
+        height: 7rem;
+        object-fit: cover; 
+
+    }
+
+}
+
+
+
 }

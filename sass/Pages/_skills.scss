@@ -12,14 +12,18 @@
          url("../img/skills.jpg");
     background-position: center;
     background-size: cover;
+    
  
 
     &__wrapper {
         list-style: none;
-        width: 60%;
+        width: 46%;
         margin: 6rem auto;
+        padding: 2rem 3.5rem;
         color: var(--color-white);
-        align-items: center;  
+        align-items: center;
+        transform: translateX(2rem);
+        border: 3px solid var(--color-upperline__in);
     }
 
 
@@ -68,10 +72,8 @@
 
     &__amount {
         grid-column: 2 /3;
-        //margin-left: 2rem;
-        width: 50%;
+        width: 88%;
         height: 3px;
-       // background-color: red;
     }
 
     &__bar {
@@ -123,16 +125,57 @@
     border-radius: 1000px; 
     background-color: var(--color-white);
     z-index: 50;
+    transform: translate(2rem, 2rem);
 
     &__icon {
        width: 9rem;
         height: 9rem;
         object-fit: cover; 
 
+    }
+}
 
 
+.skills {
+
+    &__upperline--1 {
+
+        top: 0;
+        left: 0;
+        width: 28.16rem;
+        transform: rotate(0deg) translate(12rem, 8rem);
+        position: absolute;  
+
+        &__in {
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: var(--color-upperline__in);
+            position: absolute;
+            left: 0;
+            z-index: 2;
+        }
+    }
+
+    &__upperline--2 {
+        top: 0;
+        left: 0;
+        width: 4.18rem;
+        transform: rotate(90deg) translate(10rem, -38rem);
+        position: absolute;
+      
+            &__in {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: var(--color-upperline__in);
+                position: absolute;
+                left: 0;
+                z-index: 2;
+        }
 
     }
+    
 }
 
 
