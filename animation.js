@@ -24,7 +24,7 @@ $(document).ready(function(){
     
 
 
-    /*FIRST SCENE FIRED AT THE BEGINING 
+    //FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   

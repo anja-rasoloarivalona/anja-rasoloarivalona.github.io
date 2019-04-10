@@ -79,7 +79,9 @@
     grid-row: 1 / -1;
     width: 100vw;
     height: 100vh;
-    background: orange; }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/form_small.jpg");
+    background-position: center;
+    background-size: cover; }
   .form form {
     border: 3px solid var(--color-upperline__in);
     grid-column: 2 / 3;
@@ -89,7 +91,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/home_check_small.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -246,6 +248,72 @@
       height: 7rem;
       object-fit: cover; }
 
+.about {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: orange;
+  grid-template-columns: 1fr 40vw 1fr;
+  grid-template-rows: 2rem max-content 40vh 15rem 1fr;
+  z-index: 2000;
+  justify-items: center;
+  overflow: hidden; }
+  .about__img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover; }
+  .about__upperline {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    width: 130%;
+    transform: rotate(0) translate(44rem, 10rem);
+    position: relative;
+    z-index: 2; }
+    .about__upperline__in {
+      display: block;
+      height: 5px;
+      width: 100%;
+      background-color: var(--color-upperline__in);
+      position: absolute;
+      left: 0;
+      z-index: 3; }
+  .about__circle__container {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    width: 15rem;
+    height: 15rem;
+    margin-top: 1.5rem;
+    perspective: 1000px;
+    z-index: 3; }
+  .about__circle {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(0deg); }
+  .about__btn--toHome {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0rem 3rem 3rem -2rem #292828;
+    border: 3px solid var(--color-upperline__in);
+    border-radius: 1000px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    .about__btn--toHome__icon {
+      width: 9rem;
+      height: 9rem;
+      object-fit: cover; }
+  .about__main {
+    width: 100%;
+    height: 100%;
+    background: var(--color-white);
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    border: 3px solid var(--color-upperline__in); }
+
 .contact {
   display: flex;
   justify-content: center;
@@ -277,7 +345,7 @@
   width: 25rem;
   border-radius: 1000px;
   height: 25rem;
-  background-image: linear-gradient(rgba(7, 7, 7, 0.6), rgba(8, 8, 8, 0.6)), url("../img/bg1.jpg");
+  background-image: linear-gradient(rgba(7, 7, 7, 0.6), rgba(8, 8, 8, 0.6)), url("../img/home_person_small.jpg");
   background-size: cover;
   background-position: center;
   transform: translate(6rem, -7rem);
@@ -405,7 +473,7 @@
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background-image: url("../img/sky.jpg");
+  background-image: url("../img/sky_small.jpg");
   background-position: center;
   background-size: cover;
   grid-template-columns: 1fr max-content 5rem 50vw 1fr;
@@ -416,7 +484,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("../img/clouds.jpg");
+    background-image: url("../img/clouds_small.jpg");
     background-position: center;
     background-size: cover;
     z-index: 1; }
@@ -698,12 +766,11 @@ body {
     grid-row: 1 / 2;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/home_check_small.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 4;
-    transform: translateY(100%); }
+    z-index: 4; }
 
 .home {
   grid-column: 2 / 3;
@@ -713,8 +780,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  z-index: 4;
-  transform: translateY(100%); }
+  z-index: 4; }
 
 .projects {
   z-index: 3; }
@@ -724,6 +790,9 @@ body {
 
 .form {
   transform: translateY(100%); }
+
+.about {
+  transform: translateX(-100%); }
 
 .upperline {
   display: block;

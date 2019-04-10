@@ -26,7 +26,7 @@ $(document).ready(function(){
 
         
 
-    /*    $( ".home__circle--1" ).click(function()         { 
+       $( ".home__circle--1" ).click(function()         { 
             
             TweenMax.to('.home', 1.5, {
               css: { transform: 'translateY(100%)'}
@@ -35,7 +35,7 @@ $(document).ready(function(){
               css: { transform: 'translateY(100%)'}
             })  
 
-            if (!$(".container__layer").hasClass("stopAnimation"))  { */
+            if (!$(".container__layer").hasClass("stopAnimation"))  { 
                
 
 
@@ -71,15 +71,15 @@ $(document).ready(function(){
     TweenMax.from(".projects__layer", .6, {opacity: "0", ease:Power0.easeNone}).delay(4.5);
   
 
- /*   $('.container__layer').addClass("stopAnimation");
+   $('.container__layer').addClass("stopAnimation");
 
     } else {
         null; 
-    } */
+    } 
       
 
 
-   
+  })
 
 
 });

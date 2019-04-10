@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background-image: url('../img/sky.jpg');
+    background-image: url('../img/sky_small.jpg');
     background-position: center;
     background-size: cover;
     grid-template-columns: 1fr max-content 5rem 50vw 1fr;
@@ -18,7 +18,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background-image: url('../img/clouds.jpg');
+        background-image: url('../img/clouds_small.jpg');
         background-position: center;
         background-size: cover;
         z-index: 1;
