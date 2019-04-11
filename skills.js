@@ -59,7 +59,7 @@ $(document).ready(function(){
    
 
    
-    $('.skills__btn--toHome').click(function() {
+    $('.skills__btn--home').click(function() {
         TweenMax.to('.skills', 1.69, {
             css: {transform: 'translateX(100%)'}
           }) ;

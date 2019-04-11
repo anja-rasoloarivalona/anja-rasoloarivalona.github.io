@@ -768,8 +768,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 4;
-    transform: translateY(100%); }
+    z-index: 4; }
 
 .home {
   grid-column: 2 / 3;
@@ -779,8 +778,7 @@ body {
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  z-index: 4;
-  transform: translateY(100%); }
+  z-index: 4; }
 
 .projects {
   z-index: 3; }

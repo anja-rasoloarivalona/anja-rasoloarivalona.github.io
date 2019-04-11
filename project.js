@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
 
 
-      $( ".projects__btn--toHome" ).click(function() {
+      $( ".projects__btn--home" ).click(function() {
 
 
 

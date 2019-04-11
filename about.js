@@ -12,7 +12,7 @@ $(document).ready(function(){
        })
 
 
-       $( ".about__btn--toHome" ).click(function() {
+       $( ".about__btn--home" ).click(function() {
 
 
 

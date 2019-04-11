@@ -12,7 +12,7 @@ $(document).ready(function(){
       });
 
     
-      $( ".form__btn--toHome" ).click(function() {
+      $( ".form__btn--home" ).click(function() {
 
         TweenMax.to('.form', 1.67, {
           css: {transform: 'translateY(100%)'}
