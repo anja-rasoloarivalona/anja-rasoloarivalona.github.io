@@ -19,7 +19,7 @@
         background-image:linear-gradient(
         rgba(black, 0.3),
         rgba(black, 0.3)),
-        url('../img/cool.jpg');
+        url('../img/cool_small.jpg');
         @include background_centered;
         z-index: 1;
     }
@@ -139,7 +139,7 @@
         grid-row: 3 / 4;
         grid-column: 1 / 2;
         position: relative;
-        margin-right: 2rem;   
+        margin-right: 1rem;   
         transform: translate(2.5rem, 0rem);
         z-index: 2;   
 

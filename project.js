@@ -22,7 +22,7 @@ $(document).ready(function(){
         var $projectsCircle2 = $('.projects__circle--2')
         var $projectsCircle3 = $('.projects__circle--3')
         var $projectsCircle4 = $('.projects__circle--4')
-        var $projectbtn = $('.projects__btn--toHome')
+        var $projectbtn = $('.projects__btn--home')
 
         
 
@@ -58,16 +58,15 @@ $(document).ready(function(){
 
       TweenMax.from(".projects__upperline--fromHome", 2, {opacity: "0", ease:Power0.easeNone}).delay(.2);
       TweenMax.from(".projects__upperline--1", .4, {opacity: "0", ease:Power0.easeNone}).delay(3);
-      TweenMax.from(".projects__upperline--2", 1, {opacity: "0", ease:Power0.easeNone}).delay(3.4);
+      TweenMax.from(".projects__upperline--2", 1, {opacity: "0", ease:Power0.easeNone}).delay(3.6);
       TweenMax.from(".projects__upperline--3", 1, {opacity: "0", ease:Power0.easeNone}).delay(1.4);
-      TweenMax.from(".projects__upperline--4", 1, {opacity: "0", ease:Power0.easeNone}).delay(3.5);
+      
     
       
     TweenMax.from(".projects__upperline--fromHome__in", .8, {width: "0", ease:Power0.easeNone}).delay(.6); 
     TweenMax.from(".projects__upperline--1__in", .6, {width: "0", ease:Power0.easeNone}).delay(3.4); 
-    TweenMax.from(".projects__upperline--2__in", .6, {width: "0px", ease:Power0.easeNone}).delay(3.5);
+    TweenMax.from(".projects__upperline--2__in", .6, {width: "0px", ease:Power0.easeNone}).delay(3.8);
     TweenMax.from(".projects__upperline--3__in", .6, {width: "0px", ease:Power0.easeNone}).delay(1.8);
-    TweenMax.from(".projects__upperline--4__in", .6, {width: "0px", ease:Power0.easeNone}).delay(3.5);
     TweenMax.from(".projects__layer", .6, {opacity: "0", ease:Power0.easeNone}).delay(4.5);
   
 

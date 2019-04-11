@@ -8,7 +8,7 @@ $(document).ready(function(){
     var $homeCircleMain = $('.home__main')
 
 
-    /*FIRST SCENE FIRED AT THE BEGINING 
+    //FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   
@@ -31,50 +31,50 @@ $(document).ready(function(){
     TweenMax.from(".home__upperline--3__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2);
     TweenMax.from(".home__upperline--4__in", 2, {width: "0px", ease:Power0.easeNone}).delay(1.2); 
 
-    */
+    
 
         //CIRCLE 1 HOVER
         $(".home__circle--1").mouseover(function(){
           TweenMax.to(".home__circle--1__layer", .4, {opacity: "1", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--1", 1, {border: "0px", ease:Power0.easeNone}).delay(-.5)
+          TweenMax.to(".home__circle--1", .4, {border: "0px", ease:Power0.easeNone}).delay(-.5)
         });
 
         $(".home__circle--1").mouseleave(function(){
           TweenMax.to(".home__circle--1__layer", .4, {opacity: "0", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--1", 1, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
+          TweenMax.to(".home__circle--1", .4, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
         });
 
         //CIRCLE 2 HOVER
         $(".home__circle--2").mouseover(function(){
           TweenMax.to(".home__circle--2__layer", .4, {opacity: "1", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--2", 1, {border: "0px", ease:Power0.easeNone}).delay(-.5)
+          TweenMax.to(".home__circle--2", .4, {border: "0px", ease:Power0.easeNone}).delay(-.5)
         });
 
         $(".home__circle--2").mouseleave(function(){
           TweenMax.to(".home__circle--2__layer", .4, {opacity: "0", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--2", 1, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
+          TweenMax.to(".home__circle--2", .4, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
         });
 
         //CIRCLE 3 HOVER
         $(".home__circle--3").mouseover(function(){
           TweenMax.to(".home__circle--3__layer", .4, {opacity: "1", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--3", 1, {border: "0px", ease:Power0.easeNone}).delay(-.5)
+          TweenMax.to(".home__circle--3", .4, {border: "0px", ease:Power0.easeNone}).delay(-.5)
         });
 
         $(".home__circle--3").mouseleave(function(){
           TweenMax.to(".home__circle--3__layer", .4, {opacity: "0", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--3", 1, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
+          TweenMax.to(".home__circle--3", .4, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
         });
 
         //CIRCLE 4 HOVER
         $(".home__circle--4").mouseover(function(){
           TweenMax.to(".home__circle--4__layer", .4, {opacity: "1", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--4", 1, {border: "0px", ease:Power0.easeNone}).delay(-.5)
+          TweenMax.to(".home__circle--4", .4, {border: "0px", ease:Power0.easeNone}).delay(-.5)
         });
 
         $(".home__circle--4").mouseleave(function(){
           TweenMax.to(".home__circle--4__layer", .4, {opacity: "0", ease:Power0.easeNone})
-          TweenMax.to(".home__circle--4", 1, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
+          TweenMax.to(".home__circle--4", .4, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
         });
 
 
