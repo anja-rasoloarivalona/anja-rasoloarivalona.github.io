@@ -1,0 +1,19 @@
+@mixin flex_row_centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin position_absolute_centered {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@mixin background_centered {
+    background-size: cover;
+    background-position: center;
+}

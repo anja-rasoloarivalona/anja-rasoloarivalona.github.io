@@ -1,19 +1,15 @@
 .skills {
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex_row_centered;
+    @include background_centered;
     z-index: 100;
     position: absolute;
     background-image:linear-gradient(
          rgba(black, 0.9),
          rgba(black, 0.9)),
          url("../img/skills.jpg");
-    background-position: center;
-    background-size: cover;
     
- 
 
     &__wrapper {
         list-style: none;
@@ -109,30 +105,14 @@
 
 
 
-.skills__btn--toHome {
+.skills__btn--home {
 
     position: absolute;
     top: 0;
     left: 0;
-    width: 12rem;
-    height: 12rem;
-    box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
-    overflow: hidden;
-    border: 3px solid var(--color-upperline__in);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1000px; 
-    background-color: var(--color-white);
+    @include flex_row_centered;
     z-index: 50;
     transform: translate(2rem, 2rem);
-
-    &__icon {
-       width: 9rem;
-        height: 9rem;
-        object-fit: cover; 
-
-    }
 }
 
 

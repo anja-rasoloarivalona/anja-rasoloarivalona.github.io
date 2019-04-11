@@ -1,12 +1,14 @@
-.home__main,
 .circle {
     box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
     overflow: hidden;
     position: relative;
     border: 3px solid var(--color-upperline__in);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex_row_centered;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 1000px;
+    background-color: white;
+    z-index:5;    
     
 }
 
@@ -14,28 +16,7 @@
     width: 8rem;
     height: 8rem;
     object-fit: cover;
-}
 
-
-
-.btn--circle {
-    position: absolute;
-    width: 4rem;
-    height: 3rem;
-    z-index: 1000;
-    transform: translateX(-4rem);
-    transition: all 2s ease-in-out;
-}
-
-
-.circle--1:hover {
-    & .circle__icon {
-        transform: translateY(-3rem) translateX(4rem);
-    }
-
-    & .btn--circle {
-        transform: translateY(4.3rem) translateX(-4rem);
-    }
 }
 
 

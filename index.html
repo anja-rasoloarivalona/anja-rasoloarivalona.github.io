@@ -30,17 +30,22 @@
 
 <!--HOME SECTION-->	
 
-		<main class="home">
+	<main class="home">
 
-			<div class="home__main">
+		<!--	<div class="home__welcome">
+					<div class="home__welcome__text">ANJA</div>
+				</div>
+		 -->
+
+	<div class="home__main">
 				<div class="home__main__para">
 					<p class="home__main__text">
-							« I'm passionate about creating clean, unique, elegant and functional websites. The designs you love. Designs that work. Read the juicy bits about me, or find out why you should hire me. »
+						« I'm passionate about creating clean, unique, elegant and functional websites. The designs you love. Designs that work. Read the juicy bits about me, or find out why you should hire me. »
 					</p>
 				</div>
-			</div>
+		</div>
 			
-			<!---UPPER LINE-->
+		<!--	UPPER LINE-->
 	
 			<div class="home__upperline--1 upperline">
 				<span class="home__upperline--1__in"></span>
@@ -55,84 +60,92 @@
 			<div class="home__upperline--4 upperline">
 				<span class="home__upperline--4__in"></span>
 			</div>
-<!--
-			<div class="home__upperline--toProjects upperline">
-				<span class="home__upperline--toProjects__in"></span>
-			</div>-->
 	
-			<!---CIRCLE-->
-
 			<div class="home__circle--1 circle">
 				<img src="img/brief.png" class="circle__icon home__circle__icon--briefcase" alt="briefcase img"/>
+				<div class="home__circle--1__layer home__circle__layer">
+					
+					<h3 class="home__circle__layer__text">
+						My Projects
+					</h3>
+					
+				</div>
+
+
 			</div>
 							
 			<div class="home__circle--2 circle">
 				<img src="img/me.png" class="circle__icon home__circle__icon--mail" alt="briefcase img"/>
-				
+				<div class="home__circle--2__layer home__circle__layer">
+					<h3 class="home__circle__layer__text">
+						Reach Me Out
+					</h3>					
+				</div>
+
+
 			</div>
 
 			<div class="home__circle--3  circle">
-				<img src="img/skills1.png" class="circle__icon home__circle__icon--skills" alt="briefcase img"/>
+				<img src="img/pc.png" class="circle__icon home__circle__icon--skills" alt="briefcase img"/>
+				<div class="home__circle--3__layer home__circle__layer">
+					<h3 class="home__circle__layer__text">
+						My Skills
+					</h3>					
+				</div>
+
+
 			</div>
 
 			<div class="home__circle--4 circle">
 				<img src="img/mail3.png" class="circle__icon home__circle__icon--me" alt="briefcase img"/>
-			</div>
-		</main>
+				<div class="home__circle--4__layer home__circle__layer">
+					<h3 class="home__circle__layer__text">
+						About Me
+					</h3>
+				</div>
+			</div>		
+	</div> 	
 
-		<!--PROJECTS SECTION-->
+</main> 
+
+		
+
+
+<!--PROJECTS SECTION-->
 
 		<section class="projects">
 
 			<div class="projects__layer"></div>
-
-			<main class="projects__container">
-
-				
-
+		<!--- MAIN PROJECTS-->
+			<main class="projects__container">				
 					<div class="projects__circle--1 circle">
 						<img src="img/img1.jpg" class="projects__img" alt="briefcase img"/>
-					</div>
-									
+					</div>									
 					<div class="projects__circle--2 circle">
-						<img src="img/img1.jpg" class="projects__img" alt="briefcase img"/>
-						
+						<img src="img/beats.jpg" class="projects__img" alt="briefcase img"/>						
 					</div>
-
 					<div class="projects__circle--3  circle">
-						<img src="img/img1.jpg" class="projects__img" alt="briefcase img"/>
+						<img src="img/hotel.jpg" class="projects__img" alt="briefcase img"/>
 					</div>
-
 					<div class="projects__circle--4 circle">
-						<img src="img/img1.jpg" class="projects__img" alt="briefcase img"/>
+						<img src="img/map.jpg" class="projects__img" alt="briefcase img"/>
 					</div>
-
-
 
 					<div class="projects__upperline--1 upperline">
 							<span class="projects__upperline--1__in"></span>
 					</div>
-
 					<div class="projects__upperline--2 upperline">
 							<span class="projects__upperline--2__in"></span>
 					</div>
-
 					<div class="projects__upperline--4 upperline">
 							<span class="projects__upperline--4__in"></span>
-					</div>
-
-					
-
-
+					</div>					
 			</main>
-				<!--- UPPERLINE PROJECTS-->	
 
-					
-					
+			<!--- SECOND PROJECTS-->											
 					<div class="projects__upperline--3 upperline">
 							<span class="projects__upperline--3__in"></span>
 					</div>
-
 
 					<div class="projects__container__upperline">
 							<div class="projects__upperline--fromHome upperline">
@@ -141,22 +154,13 @@
 					</div>
 					
 
-
-
-
-					<div class="projects__btn--toHome">
-							<img src="img/home.png" class="projects__btn--toHome__icon" alt="home"/>
-					</div>
-
-
-
-			
-			
-				
+					<div class="btn--home projects__btn--home">
+							<img src="img/home.png" class="btn--home__icon" alt="home"/>
+					</div>				
 		</section>
 
 
-		<!--SKILLS SECTION-->
+<!--SKILLS SECTION-->
 
 		<section class="skills" id="skills">
 
@@ -169,14 +173,11 @@
 				</div>
 
 
-				<div class="skills__btn--toHome">
-						<img src="img/home.png" class="skills__btn--toHome__icon" alt="briefcase img"/>
+				<div class="skills__btn--home btn--home">
+						<img src="img/home.png" class="btn--home__icon" alt="briefcase img"/>
 				</div>
 
-
-				<div class="skills__wrapper">
-		
-					
+				<div class="skills__wrapper">							
 					<li class="skills__item">
 						<div class="skills__title">
 							<svg  class="skills__icon skills__icon--html">
@@ -255,15 +256,8 @@
 						<div class="skills__amount">
 							<span class="skills__bar"><span class="skills__bar--git skills__bar__score"></span></span>			
 						</div>
-					</li>
-		
-		
-					
-		
-					
-				</div>
-				
-		
+					</li>				
+				</div>					
 		</section>
 
 			
@@ -272,9 +266,10 @@
 
 		<section class="form">
 
-				<div class="form__btn--toHome">
-						<img src="img/home.png" class="form__btn--toHome__icon" alt="briefcase img"/>
+				<div class="form__btn--home btn--home">
+						<img src="img/home.png" class="btn--home__icon" alt="briefcase img"/>
 				</div>
+
 
 				<div class="form__upperline--1 upperline">
 						<span class="form__upperline--1__in"></span>
@@ -334,7 +329,6 @@
 		<section class="about">
 		
 			<div class="about__circle__container">
-
 					<div class="about__circle circle">
 							<img src="img/moi.jpg" class="about__img" alt="briefcase img"/>
 					</div>
@@ -344,8 +338,8 @@
 			<div class="about__main"></div>
 
 			
-			<div class="about__btn--toHome">
-					<img src="img/home.png" class="about__btn--toHome__icon" alt="home"/>
+			<div class="about__btn--home btn--home">
+					<img src="img/home.png" class="btn--home__icon" alt="home"/>
 			</div>
 
 			<div class="about__upperline upperline">

@@ -25,11 +25,7 @@
         transform: rotate(0) translate(44rem, 10rem);
         position: relative;
         z-index: 2;
-    
-    
-    
-
-        
+     
             &__in {
                 display: block;
                 height: 5px;
@@ -59,24 +55,10 @@
         transform: rotateX(0deg);
     }
 
-    &__btn--toHome {
+    &__btn--home {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
-        width: 12rem;
-        height: 12rem;
-        box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
-         border: 3px solid var(--color-upperline__in);
-         border-radius: 1000px;  
-         background-color: var(--color-white);
-         display: flex;
-         justify-content: center;
-         margin-bottom: 2rem;
-
-         &__icon {
-             width: 9rem;
-             height: 9rem;
-             object-fit: cover;
-         }
+        margin-bottom: 2rem;
     }
 
     &__main {

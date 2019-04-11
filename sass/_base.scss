@@ -35,8 +35,7 @@ body {
         rgba(black, 0.6),
         rgba(black, 0.6)),
         url("../img/home_check_small.jpg");
-        background-position: center;
-        background-size:cover;
+        @include background_centered;
         background-repeat: no-repeat;
         z-index:4;
 
@@ -48,18 +47,17 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);   
     z-index: 4;  
  //   transform: translateY(100%);         
 }
 
 .projects {
-    //grid-column: 1 / -1;
-   // grid-row: 1 / 2;
-    z-index: 3;  
+    z-index: 3;     
+ //   transform: translateY(100%);    
 }
 
 
@@ -85,14 +83,6 @@ body {
     z-index: 1;
 }
 
-.circle {
-    display: block;
-    width: 18rem;
-    height: 18rem;
-    border-radius: 1000px;
-    background-color: white;
-    z-index:5;     
-}
 
 
 

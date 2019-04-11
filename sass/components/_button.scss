@@ -1,3 +1,7 @@
+///////////////////////////////////
+///// SIMPLE BUTTON
+
+
 .btn {
     /* FOR THIS PROJECT ONLY */
         margin: 1rem;
@@ -57,4 +61,25 @@
         color: var(--color-primary);
     }
 
+}
+
+
+///////////////////////////////////
+///// CUSTOMED BUTTON
+
+.btn--home {
+    width: 9rem;
+    height: 9rem;
+    box-shadow: 0rem 3rem 3rem -2rem #292828;
+    overflow: hidden;
+    border: 3px solid var(--color-upperline__in);
+    @include flex_row_centered;
+    border-radius: 1000px;
+    background-color: var(--color-white);
+    z-index: 40;
+
+    &__icon {
+        width: 7rem;
+        height: 7rem;
+    }
 }
