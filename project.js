@@ -82,4 +82,65 @@ $(document).ready(function(){
   })
 
 
+  //CIRCLE 1 HOVER
+  $(".projects__circle--1").mouseover(function(){
+    TweenMax.to(".projects__circle__layer__head--1", .4, {autoAlpha: 1, y: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--1", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--1", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+  });
+
+  
+  $(".projects__circle--1").mouseleave(function(){
+    TweenMax.to(".projects__circle__layer__head--1", .4, {autoAlpha: 0, y: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--1", .4, {autoAlpha: 0, x: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--1", .4, {autoAlpha: 0, x: '100%', ease:Power0.easeNone})
+  });
+
+
+  //CIRCLE 2 HOVER
+  $(".projects__circle--2").mouseover(function(){
+    TweenMax.to(".projects__circle__layer__head--2", .4, {autoAlpha: 1, y: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--2", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--2", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+  });
+
+  
+  $(".projects__circle--2").mouseleave(function(){
+    TweenMax.to(".projects__circle__layer__head--2", .4, {autoAlpha: 0, y: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--2", .4, {autoAlpha: 0, x: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--2", .4, {autoAlpha: 0, x: '100%', ease:Power0.easeNone})
+  });
+
+
+  //CIRCLE 3 HOVER
+  $(".projects__circle--3").mouseover(function(){
+    TweenMax.to(".projects__circle__layer__head--3", .4, {autoAlpha: 1, y: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--3", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--3", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+  });
+
+  
+  $(".projects__circle--3").mouseleave(function(){
+    TweenMax.to(".projects__circle__layer__head--3", .4, {autoAlpha: 0, y: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--3", .4, {autoAlpha: 0, x: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--3", .4, {autoAlpha: 0, x: '100%', ease:Power0.easeNone})
+  });
+
+
+  //CIRCLE 4 HOVER
+  $(".projects__circle--4").mouseover(function(){
+    TweenMax.to(".projects__circle__layer__head--4", .4, {autoAlpha: 1, y: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--4", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--4", .4, {autoAlpha: 1, x: '0%', ease:Power0.easeNone})
+  });
+
+  
+  $(".projects__circle--4").mouseleave(function(){
+    TweenMax.to(".projects__circle__layer__head--4", .4, {autoAlpha: 0, y: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__source--4", .4, {autoAlpha: 0, x: '-100%', ease:Power0.easeNone})
+    TweenMax.to(".projects__circle__layer__web--4", .4, {autoAlpha: 0, x: '100%', ease:Power0.easeNone})
+  });
+
+
+
 });

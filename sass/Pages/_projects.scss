@@ -5,8 +5,8 @@
     position: absolute;
     background-image: url('../img/sky_small.jpg');
     @include background_centered;
-    grid-template-columns: 1fr max-content 5rem 50vw 1fr;
-    grid-template-rows: 5rem 50vh 10rem minmax(10rem, 1fr);  
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: 10rem 1fr 10rem;  
     //align-items: center;
     //justify-items: center;   
     
@@ -27,10 +27,10 @@
 
     &__container {
         height: 100%;
-        grid-column: 4 / 5;
+        grid-column: 2 / 3;
         grid-row: 2 / 3;
         display: grid;
-        grid-template-columns: repeat(3, calc(50vw / 3));
+        grid-template-columns: repeat(2, 15rem) repeat(3, calc(50vw / 3));
         grid-template-rows: max-content 10rem max-content;
         justify-items: center;
         align-items: center;
@@ -41,7 +41,7 @@
 
       &--fromHome {
         width: 20rem;
-        transform: rotate(90deg) translate(8.6rem, 4rem);
+        transform: rotate(90deg) translate(0rem, 0rem);
         position: relative;  
 
             &__in {
@@ -56,32 +56,80 @@
     }
 
     &__container__upperline {
-        grid-row: 4 / 5;
+        grid-row: 3 / 4;
         grid-column: 2 / 3;
     }
 
 
-
     &__circle {
+        z-index: 1800;
+
+        &__layer {
+            @include position_absolute_centered;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            z-index: 2000;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            border-radius: 50%;
+
+            font-size: 1.5rem;
+            letter-spacing: 1.3px;
+
+            &__head {
+                grid-row: 1 / 2;
+                grid-column: 1 / -1;
+                background: rgba(black, .9);
+                transform: translateY(-100%);  
+                display: hidden;    
+            }
+
+            &__source {
+                grid-row: 2 / 3;
+                grid-column: 1 / 2;
+                background: var(--color-white);
+                color: var(--color-upperline__in);
+                @include flex_row_centered;
+                transform: translateX(-100%);
+                padding-left: 1.5rem;
+                padding-bottom: .8rem;
+                display: hidden; 
+                cursor: pointer;            
+            }
+
+            &__web {
+                grid-row: 2 / 3;
+                grid-column: 2 / 3;
+                background: var(--color-upperline__in);
+                color:  var(--color-white);
+                @include flex_row_centered;
+                padding-right: 1.5rem;
+                padding-bottom: .8rem;
+                transform: translateX(100%);
+                display: hidden; 
+                cursor: pointer;       
+            }
+        }
 
         &--1 {
-            grid-column: 1 / 2;
+            grid-column: 3 / 4;
             grid-row: 3 / 4;
         }
 
         &--2 {
-            grid-column: 1 / 2;
+            grid-column: 3 / 4;
             grid-row: 1 / 2;
           
         }
 
         &--3 {
-            grid-column: 3 / 4;
+            grid-column: 5 / 6;
             grid-row: 3 / 4;
         }
 
         &--4 {
-            grid-column: 3 / 4;
+            grid-column: 5 / 6;
             grid-row: 1 / 2;
         }
     }
@@ -89,11 +137,13 @@
 
     &__btn--home {
         grid-row: 3 / 4;
-        grid-column: 2 / 3;
+        grid-column: 1 / 2;
         position: relative;
         margin-right: 2rem;   
-        transform: translateY(-2rem);
+        transform: translate(2.5rem, 0rem);
         z-index: 2;   
+
+      //  position: fixed;
     }
 
 
@@ -108,7 +158,7 @@
 
         &--1 {
             grid-row: 2 / 3;
-            grid-column: 2 / 3;
+            grid-column: 4  / 5;
             width: 175%;
             transform: rotate(-30deg) translate(0rem, 0rem);
             position: relative;
@@ -127,42 +177,28 @@
 
         &--2 {
             grid-row: 2 / 3;
-            grid-column: 2 / 3;
-            width: 87.5%;
-            transform: rotate(30deg) translate(9rem, 0rem);
+            grid-column: 4  / 5;
+            width: 175%;
+            transform: rotate(30deg) translate(0rem, 0rem);
             position: relative;              
             &__in {
+
                 display: block;
+                @include position_absolute_centered;
                 height: 5px;
                 width: 100%;
                 background-color: var(--color-upperline__in);
-                position: absolute;
                 z-index: 2;
             }
         }
 
-        &--4 {
-            grid-row: 2 / 3;
-            grid-column: 2 / 3;
-            width: 87.5%;
-            transform: rotate(30deg) translate(-10rem, 0rem);
-            position: relative;      
-            &__in {
-                display: block;
-                height: 5px;
-                width: 100%;
-                background-color: var(--color-upperline__in);
-                position: absolute;
-                right: 0;
-                z-index: 2;
-            }
-        }
+       
 
         &--3 {
             grid-row: 3 / 4;
-            grid-column: 3 / 4;
-            width: 369%;
-            transform: rotate(0deg) translate(-10rem, 4rem);
+            grid-column: 2 / 3;
+            width: 137%;
+            transform: rotate(0deg) translate(0rem, 0rem);
 
             &__in {
                 display: block;
