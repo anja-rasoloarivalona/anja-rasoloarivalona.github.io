@@ -4,10 +4,10 @@
     display: grid;
     grid-template-columns: 1fr  50vw 1fr;
     grid-template-rows: repeat(3, 1fr); 
-    z-index: 10000;
+    z-index: 1000;
     position: absolute;
     justify-items: center;
-    align-items: center;
+    align-content: start;
     
 
     &__layer {
@@ -32,7 +32,8 @@
         grid-template-rows: 100%;
         padding: .5rem 2rem;
         justify-items: center;
-        background: var(--color-upperline__in);
+        background: #8E8E8B;
+        //var(--color-upperline__in);
         border-radius: 5px;
         z-index: 7;
         overflow: hidden;
@@ -58,28 +59,12 @@
 
    
 
-    &__item__phone {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 3px solid var(--color-upperline__in);
-        box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
-        transform: translate(35rem, 14rem);
-        @include flex_row_centered;
-        width: 15rem;
-        height: 6rem;
-        background: var(--color-white);
-        font-size: 1.5rem;
-        color: var(--color-upperline__in);
-        font-family: sans-serif; 
-        opacity: 0;
-
-    }
+    
 
 
     & form {
         width: 90%;
-        border: 3px solid var(--color-upperline__in);
+    //    border: 3px solid var(--color-upperline__in);
         grid-column: 2 / 3;
         @include flex_row_centered;
         flex-direction: column; 
@@ -192,5 +177,39 @@
     }
 
 
+    &__item__wrapper {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+       // align-content: start;
+      //  justify-content: end;
+        width: 90%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;     
+        align-items: flex-end;
+        justify-content: space-around;
 
+        &__details {
+            border: 3px solid #8E8E8B; //var(--color-upperline__in);
+            box-shadow: 0rem 3rem 3rem -2rem rgb(41, 40, 40);
+            @include flex_row_centered;
+            width: 60%;
+            height: 6rem;
+            background: var(--color-white);
+            font-size: 1.5rem;
+            color: var(--color-upperline__in);
+            font-family: sans-serif; 
+            opacity: 0;
+
+          &--phone,
+          &--mail {
+              transform: translateX(110%);
+          }
+            
+    
+        }
+    }
+
+
+    
 }

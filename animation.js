@@ -8,7 +8,7 @@ $(document).ready(function(){
     var $homeCircleMain = $('.home__main')
 
 
-    //FIRST SCENE FIRED AT THE BEGINING 
+    /*FIRST SCENE FIRED AT THE BEGINING 
 
     var t1 = new TimelineLite();
   
@@ -76,7 +76,7 @@ $(document).ready(function(){
           TweenMax.to(".home__circle--4__layer", .4, {opacity: "0", ease:Power0.easeNone})
           TweenMax.to(".home__circle--4", .4, {border: "3px solid #2187e7", ease:Power0.easeNone}).delay(-.6)
         });
-
+*/
 
 
   });

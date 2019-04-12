@@ -132,10 +132,10 @@
   display: grid;
   grid-template-columns: 1fr  50vw 1fr;
   grid-template-rows: repeat(3, 1fr);
-  z-index: 10000;
+  z-index: 1000;
   position: absolute;
   justify-items: center;
-  align-items: center; }
+  align-content: start; }
   .form__layer {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
@@ -154,7 +154,7 @@
     grid-template-rows: 100%;
     padding: .5rem 2rem;
     justify-items: center;
-    background: var(--color-upperline__in);
+    background: #8E8E8B;
     border-radius: 5px;
     z-index: 7;
     overflow: hidden; }
@@ -170,26 +170,8 @@
     height: 5rem;
     object-fit: cover;
     z-index: 1900; }
-  .form__item__phone {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 3px solid var(--color-upperline__in);
-    box-shadow: 0rem 3rem 3rem -2rem #292828;
-    transform: translate(35rem, 14rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 6rem;
-    background: var(--color-white);
-    font-size: 1.5rem;
-    color: var(--color-upperline__in);
-    font-family: sans-serif;
-    opacity: 0; }
   .form form {
     width: 90%;
-    border: 3px solid var(--color-upperline__in);
     grid-column: 2 / 3;
     display: flex;
     justify-content: center;
@@ -267,6 +249,30 @@
     margin: auto;
     z-index: 50;
     transform: translate(3.3rem, -1rem); }
+  .form__item__wrapper {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around; }
+    .form__item__wrapper__details {
+      border: 3px solid #8E8E8B;
+      box-shadow: 0rem 3rem 3rem -2rem #292828;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      height: 6rem;
+      background: var(--color-white);
+      font-size: 1.5rem;
+      color: var(--color-upperline__in);
+      font-family: sans-serif;
+      opacity: 0; }
+      .form__item__wrapper__details--phone, .form__item__wrapper__details--mail {
+        transform: translateX(110%); }
 
 .home__welcome {
   display: flex;

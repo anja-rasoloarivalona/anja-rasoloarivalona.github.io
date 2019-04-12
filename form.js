@@ -29,22 +29,37 @@ $(document).ready(function(){
       });
 
       
-
+////////////////////////PHONE
 
      $( ".form__item--phone" ).click(function() {
 
       if (!$(".form__item--phone").hasClass("actived")) {
         
-        TweenMax.to(".form__item__phone", 1, {css: {transform: 'translate(17rem, 14rem)', autoAlpha: '1'}});   
+        TweenMax.to(".form__item__wrapper__details--phone", 1, {transform: 'translateX(0%)', autoAlpha: '1'});   
         $('.form__item--phone').addClass("actived");
       }
 
       else {
-        TweenMax.to(".form__item__phone", 1, {css: {transform: 'translate(35rem, 14rem)', autoAlpha: '0'}});  
+        TweenMax.to(".form__item__wrapper__details--phone", 1, {transform: 'translateX(110%)', autoAlpha: '0'});  
         $('.form__item--phone').removeClass("actived");
+      }   
+
+     }) 
+
+///////////////////////////////MAIL
+
+     $( ".form__item--mail" ).click(function() {
+
+      if (!$(".form__item--mail").hasClass("actived")) {
+        
+        TweenMax.to(".form__item__wrapper__details--mail", 1, {transform: 'translateX(0%)', autoAlpha: '1'});   
+        $('.form__item--mail').addClass("actived");
       }
 
-     
+      else {
+        TweenMax.to(".form__item__wrapper__details--mail", 1, {transform: 'translateX(110%)', autoAlpha: '0'});  
+        $('.form__item--mail').removeClass("actived");
+      }   
 
      }) 
 
