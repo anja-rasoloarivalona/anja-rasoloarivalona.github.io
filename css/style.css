@@ -281,12 +281,15 @@
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  background-color: white;
-  -webkit-box-shadow: inset 0 0 1.3rem 1px #000000;
+  background-image: url("../../img/log.png");
+  background-size: cover;
+  background-position: center;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   transform: translate(6rem, -7rem);
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 300000;
+  cursor: pointer; }
   .home__welcome__text {
     font-size: 2rem;
     font-weight: 400;
@@ -324,7 +327,7 @@
   .home__upperline--1__in {
     display: block;
     height: 5px;
-    width: 100%;
+    width: 0%;
     background-color: var(--color-upperline__in);
     position: absolute;
     right: 0;
@@ -339,7 +342,7 @@
   .home__upperline--2__in {
     display: block;
     height: 5px;
-    width: 100%;
+    width: 0%;
     background-color: var(--color-upperline__in);
     position: absolute;
     right: 0;
@@ -354,7 +357,7 @@
   .home__upperline--3__in {
     display: block;
     height: 5px;
-    width: 100%;
+    width: 0%;
     background-color: var(--color-upperline__in);
     position: absolute;
     right: 0;
@@ -369,7 +372,7 @@
   .home__upperline--4__in {
     display: block;
     height: 5px;
-    width: 100%;
+    width: 0%;
     background-color: var(--color-upperline__in);
     position: absolute;
     left: 0;
@@ -747,6 +750,9 @@ body {
 
 .projects {
   z-index: 3; }
+
+.skills {
+  transform: translateX(100%); }
 
 .form {
   transform: translateY(100%); }

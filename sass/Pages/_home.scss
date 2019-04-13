@@ -7,12 +7,15 @@
         width: 20rem;
         height: 20rem;
         border-radius: 50%;
-        background-color: white;
-        -webkit-box-shadow: inset 0 0 1.3rem 1px #000000;
+        background-image: url('../../img/log.png');
+        @include background_centered;
+      //  -webkit-box-shadow: inset 0 0 1.3rem 1px #000000;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         transform: translate(6rem, -7rem);
-        overflow: hidden;       
+        overflow: hidden;
+        z-index: 300000;   
+        cursor: pointer;    
         
         &__text {
             font-size: 2rem;
@@ -62,7 +65,7 @@
                 &__in {
                     display: block;
                     height: 5px;
-                    width: 100%;
+                    width: 0%;
                     background-color: var(--color-upperline__in);
                     position: absolute;
                     right: 0;
@@ -81,7 +84,7 @@
             &__in {
                 display: block;
                 height: 5px;
-                width: 100%;
+                width: 0%;
                 background-color: var(--color-upperline__in);
                 position: absolute;
                 right: 0;
@@ -99,7 +102,7 @@
             &__in {
                 display: block;
                 height: 5px;
-                width: 100%;
+                width: 0%;
                 background-color: var(--color-upperline__in);
                 position: absolute;
                 right: 0;
@@ -117,7 +120,7 @@
                 &__in {
                     display: block;
                     height: 5px;
-                    width: 100%;
+                    width: 0%;
                     background-color: var(--color-upperline__in);;
                     position: absolute;
                     left: 0;
